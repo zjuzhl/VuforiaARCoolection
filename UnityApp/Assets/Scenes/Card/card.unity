@@ -155,7 +155,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 132796119}
   mHiddenRoot: {fileID: 0}
-  mTargetName: bcard
+  mTargetName: ccard
   mDatasetName: Vuforia/ARTEST.xml
   mCastedBehaviour: {fileID: 132796119}
   mMeshFilter: {fileID: 0}
@@ -219,13 +219,13 @@ MonoBehaviour:
   PreviewVisible: 1
   RuntimeOcclusion: 0
   RuntimeCollider: 0
-  mTrackableName: bcard
+  mTrackableName: ccard
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ARTEST.xml
-  mAspectRatio: 1.532207
+  mAspectRatio: 1.531937
   mImageTargetType: 0
   mWidth: 1
-  mHeight: 1.532207
+  mHeight: 1.531937
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
@@ -381,7 +381,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2574177872158113499, guid: c9ee78a3e262e694f97cbc6e131ec2cd, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2574177872158113499, guid: c9ee78a3e262e694f97cbc6e131ec2cd, type: 3}
       propertyPath: m_LocalScale.x
@@ -822,7 +822,7 @@ PrefabInstance:
       objectReference: {fileID: 9100000, guid: 4186c857bfd19974b8dd2273119241c1, type: 2}
     - target: {fileID: 2944609111594530840, guid: b057e7a9aeef0f04e9619a39714c425d, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2944609111594530840, guid: b057e7a9aeef0f04e9619a39714c425d, type: 3}
       propertyPath: m_LocalScale.x
@@ -928,7 +928,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 414292336728403203, guid: 6f5e5eae37ef4bd44b43accca1f42ce3, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 414292336728403203, guid: 6f5e5eae37ef4bd44b43accca1f42ce3, type: 3}
       propertyPath: m_LocalScale.x
