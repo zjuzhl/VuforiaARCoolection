@@ -6,18 +6,19 @@ public class GameController : MonoBehaviour
 {
 
     public HandClicked handClicked;
-
+    public float disFromCamera = 1.0f; // 通过距离相机远近调整大小
     public List<Transform> disactivedTargets = new List<Transform>();
     private List<Transform> activedTargets = new List<Transform>();
     private Transform movingTarget = null;
     private bool isMoving = false;
 
     private Vector3 startPos = Vector3.up;
-    private Vector3 targetPos = Vector3.zero + new Vector3(0, 0, 2.5f);
+    private Vector3 targetPos = Vector3.zero;
 
     // Start is called before the first frame update
     void Start()
     {
+        targetPos = Vector3.zero + new Vector3(0, 0, disFromCamera);
         activedTargets.Clear();
         handClicked.onClicked = (Transform t) =>
         {
@@ -44,10 +45,10 @@ public class GameController : MonoBehaviour
                 movingTarget = disactivedTargets[idx];
                 if (movingTarget.name == "Root3" || movingTarget.name == "Root4")
                 {
-                    startPos = new Vector3(0, 1.8f, 2.5f);
+                    startPos = new Vector3(0, 1.8f, disFromCamera);
                 }
                 else {
-                    startPos = new Vector3(0, 2.4f, 2.5f);
+                    startPos = new Vector3(0, 2.4f, disFromCamera);
                 }
                 isMoving = true;
                 movingTarget.localPosition = startPos;
