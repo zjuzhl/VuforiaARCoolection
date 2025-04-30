@@ -46,11 +46,12 @@ public class GameController : MonoBehaviour
                 if (movingTarget.name == "Root3" || movingTarget.name == "Root4")
                 {
                     startPos = new Vector3(0, 1.8f, disFromCamera);
+                    isMoving = true;
                 }
                 else {
-                    startPos = new Vector3(0, 2.4f, disFromCamera);
+                    //startPos = new Vector3(0, 2.4f, disFromCamera);
+                    isMoving = false;
                 }
-                isMoving = true;
                 movingTarget.localPosition = startPos;
                 movingTarget.gameObject.SetActive(true);
                 disactivedTargets.RemoveAt(idx);
