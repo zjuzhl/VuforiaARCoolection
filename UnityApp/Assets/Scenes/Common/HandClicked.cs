@@ -5,13 +5,10 @@ using UnityEngine;
 
 public class HandClicked : MonoBehaviour
 {
-    public Action<Transform> onClicked;
+    public Action<Transform> onClicked; // 点中回调
 
     // Start is called before the first frame update
-    void Start()
-    {
-
-    }
+    void Start() { }
 
     // Update is called once per frame
     void Update()
