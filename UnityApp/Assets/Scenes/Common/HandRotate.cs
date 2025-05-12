@@ -11,28 +11,26 @@ public class HandRotate : MonoBehaviour
     public bool yrotEnable = false;
     private bool isDragging = false;
     private Quaternion prequa;
-    private Vector3 prepos;
 
     // scale
-    private float curTouchesDis = 0;
     public Transform scaleTarget;
+    private float curTouchesDis = 0;
+    public float scaleSpeed = 0.1f;
+    public float maxScaleSize = 2;
+    public float minScaleSize = 0.5f;
     private Vector3 prescale;
     private float curScaleSize = 1.0f;
-    private float maxScaleSize = 2;
-    private float minScaleSize = 0.5f;
+
 
     // Start is called before the first frame update
     void Start()
     {
-        if (rotateTarget) prepos = rotateTarget.localPosition;
         if (rotateTarget) prequa = rotateTarget.localRotation;
-
         if (scaleTarget) prescale = scaleTarget.localScale;
     }
 
     public void resetPose() 
     {
-        if (rotateTarget) rotateTarget.localPosition = prepos;
         if (rotateTarget) rotateTarget.localRotation = prequa;
     }
 
@@ -67,24 +65,21 @@ public class HandRotate : MonoBehaviour
                 if (isDragging && rotateTarget != null) 
                 {
                     var delta = touch.deltaPosition;
-                    // 竖屏
-                    if (xrotEnable)
+                    if (Screen.orientation == ScreenOrientation.Portrait) 
                     {
-                        rotateTarget.Rotate(Vector3.up, -delta.x * rotationSpeed * Time.deltaTime);
+                        if (xrotEnable)
+                            rotateTarget.Rotate(Vector3.up, -delta.x * rotationSpeed * Time.deltaTime, Space.Self);
+                        if (yrotEnable)
+                            rotateTarget.Rotate(Vector3.right, delta.y * rotationSpeed * Time.deltaTime, Space.World);
                     }
-                    if (yrotEnable)
+
+                    if (Screen.orientation == ScreenOrientation.LandscapeLeft) 
                     {
-                        rotateTarget.Rotate(Vector3.left, delta.y * rotationSpeed * Time.deltaTime);
+                        if (xrotEnable)
+                            rotateTarget.Rotate(Vector3.up, -delta.x * rotationSpeed * Time.deltaTime, Space.Self);
+                        if (yrotEnable)
+                            rotateTarget.Rotate(Vector3.right, delta.y * rotationSpeed * Time.deltaTime, Space.World);
                     }
-                    // 竖屏应用横屏体验
-                    //if (xrotEnable)
-                    //{
-                    //    rotateTarget.Rotate(Vector3.up, delta.y * rotationSpeed * Time.deltaTime);
-                    //}
-                    //if (yrotEnable)
-                    //{
-                    //    rotateTarget.Rotate(Vector3.left, delta.x * rotationSpeed * Time.deltaTime);
-                    //}
                 }
             }
             else if (state == TouchPhase.Ended)
@@ -109,20 +104,10 @@ public class HandRotate : MonoBehaviour
             {
                 if (curTouchesDis <= 0) return;
                 var l = dis - curTouchesDis;
-                if (l > 0)
-                {
-                    // larger
-                    curScaleSize += (l * 0.1f);
-                    if (curScaleSize > maxScaleSize) curScaleSize = maxScaleSize;
-                    scaleTarget.localScale = prescale * curScaleSize;
-                }
-                if (l < 0)
-                {
-                    // smaller
-                    curScaleSize -= (l * 0.1f);
-                    if (curScaleSize < minScaleSize) curScaleSize = minScaleSize;
-                    scaleTarget.localScale = prescale * curScaleSize;
-                }
+                curScaleSize += (l * 0.1f * scaleSpeed);
+                if (curScaleSize >= maxScaleSize) curScaleSize = maxScaleSize;
+                if (curScaleSize <= minScaleSize) curScaleSize = minScaleSize;
+                scaleTarget.localScale = prescale * curScaleSize;
                 curTouchesDis = dis;
             }
             if (touch0.phase == TouchPhase.Ended || touch1.phase == TouchPhase.Ended) 
