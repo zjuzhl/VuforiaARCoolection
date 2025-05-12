@@ -15,7 +15,7 @@ public class HandRotate : MonoBehaviour
     // scale
     public Transform scaleTarget;
     private float curTouchesDis = 0;
-    public float scaleSpeed = 0.1f;
+    public float scaleSpeed = 0.02f;
     public float maxScaleSize = 2;
     public float minScaleSize = 0.5f;
     private Vector3 prescale;
