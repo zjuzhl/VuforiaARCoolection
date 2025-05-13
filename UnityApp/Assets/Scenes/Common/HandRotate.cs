@@ -45,19 +45,25 @@ public class HandRotate : MonoBehaviour
     {
         if (Input.touchCount == 1) 
         {
-            if (!colliderTarget || !rotateTarget) return; 
+            if (!rotateTarget) return; 
 
             var touch = Input.GetTouch(0);
             var state = touch.phase;
             if (state == TouchPhase.Began) 
             {
-                var ray = Camera.main.ScreenPointToRay(touch.position);
-                if (Physics.Raycast(ray, out RaycastHit hitInfo, 1000, 1 << LayerMask.NameToLayer("Rotate"))) 
+                if (colliderTarget)
                 {
-                    if (hitInfo.transform == colliderTarget) 
+                    var ray = Camera.main.ScreenPointToRay(touch.position);
+                    if (Physics.Raycast(ray, out RaycastHit hitInfo, 1000, 1 << LayerMask.NameToLayer("Rotate")))
                     {
-                        isDragging = true;
+                        if (hitInfo.transform == colliderTarget)
+                        {
+                            isDragging = true;
+                        }
                     }
+                }
+                else {
+                    isDragging = true;
                 }
             }
             else if (state == TouchPhase.Moved)
