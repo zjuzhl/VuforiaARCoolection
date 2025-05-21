@@ -18,11 +18,10 @@ MonoBehaviour:
     ShowModelAfterImport: 1
     AutoScale: 0
     AutoScaleSize: 1
-    ImportAnimations: 0
+    ImportAnimations: 1
     AnimationClipType: 1
     EnsureQuaternionContinuity: 1
     CreateMipmaps: 0
-    ZipPassword: 
   DragAndDropOptions:
     PromptBeforeOverwritingFiles: 1
     CopyGltfFilesIntoProject: 0
