@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using System;
 using Vuforia;
 
 
@@ -8,6 +9,7 @@ public class PlayBtn : MonoBehaviour
     public GameObject modelTarget;
 
     public Button playBtn;
+    public Action onPlacedEvent;
 
     public AnchorInputListenerBehaviour anchorInputListenerBehaviour;
 
@@ -40,6 +42,8 @@ public class PlayBtn : MonoBehaviour
         planeFinderBehaviour.enabled = false;
         //anchorInputListenerBehaviour.OnInputReceivedEvent.RemoveAllListeners();
         anchorInputListenerBehaviour.enabled = false;
+
+        onPlacedEvent?.Invoke();
     }
 
     public void OnHittedResult(HitTestResult hitTestResult)

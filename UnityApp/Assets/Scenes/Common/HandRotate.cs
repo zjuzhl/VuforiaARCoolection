@@ -21,6 +21,7 @@ public class HandRotate : MonoBehaviour
     private Vector3 prescale;
     private float curScaleSize = 1.0f;
 
+    public bool enable = false;
 
     // Start is called before the first frame update
     void Start()
@@ -43,6 +44,8 @@ public class HandRotate : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (!enable) return;
+
         if (Input.touchCount == 1) 
         {
             if (!colliderTarget || !rotateTarget) return; 

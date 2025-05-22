@@ -53,8 +53,8 @@ namespace TMPro.Examples
 
             int totalVisibleCharacters = textInfo.characterCount; // Get # of Visible Character in text object
             int visibleCount = 0;
-
-            while (true)
+            bool oneLoop = true;
+            while (oneLoop)
             {
                 if (hasTextChanged)
                 {
@@ -65,7 +65,8 @@ namespace TMPro.Examples
                 if (visibleCount > totalVisibleCharacters)
                 {
                     yield return new WaitForSeconds(1.0f);
-                    visibleCount = 0;
+                    //visibleCount = 0;
+                    oneLoop = false;
                 }
 
                 textComponent.maxVisibleCharacters = visibleCount; // How many characters should TextMeshPro display?
