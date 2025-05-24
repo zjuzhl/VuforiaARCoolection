@@ -30,10 +30,6 @@ public class ImageState : MonoBehaviour, StateBase
         }
     }
 
-    void OnDisable() {
-        onExit();
-    }
-
     IEnumerator playContext() 
     {
         int cc = canvas.childCount;
@@ -46,8 +42,7 @@ public class ImageState : MonoBehaviour, StateBase
             }
             var audios = canvas.GetChild(i).GetComponent<AudioSource>();
             yield return new WaitForEndOfFrame();
-            Debug.Log(audios.clip.length);
-            yield return new WaitForSeconds(audios.clip.length + 1.0f);
+            yield return new WaitForSeconds(audios.clip.length + 0.5f);
             i++;
         }
 
