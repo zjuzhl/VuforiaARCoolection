@@ -18,9 +18,7 @@ public class PlayBtn : MonoBehaviour
     private void Start()
     {
         modelTarget.SetActive(false);
-        playBtn.onClick.AddListener(()=> {
-            this.OnPlay();
-        });
+        playBtn.onClick.AddListener(() => { this.OnPlay(); });
     }
 
     public void OnPlay() 
@@ -36,7 +34,7 @@ public class PlayBtn : MonoBehaviour
         playBtn.gameObject.SetActive(false);
 
         var pos = new Vector3(Camera.main.transform.position.x, modelTarget.transform.position.y, Camera.main.transform.position.z);
-        modelTarget.transform.LookAt(pos, Vector3.up);
+        modelTarget.transform.LookAt(pos, Vector3.up); // Ãæ³¯Ïà»ú
         modelTarget.SetActive(true);
 
         planeFinderBehaviour.enabled = false;
@@ -44,10 +42,5 @@ public class PlayBtn : MonoBehaviour
         anchorInputListenerBehaviour.enabled = false;
 
         onPlacedEvent?.Invoke();
-    }
-
-    public void OnHittedResult(HitTestResult hitTestResult)
-    {
-        //Debug.Log("arvuforia-" + "OnHittedToPlaced£¬ " + hitTestResult.Position.x + "," + hitTestResult.Position.y + "," + hitTestResult.Position.z);
     }
 }

@@ -12,10 +12,7 @@ public class HandClicked : MonoBehaviour
     public bool enable = false;
 
     // Start is called before the first frame update
-    void Start()
-    {
-
-    }
+    void Start() { }
 
     // Update is called once per frame
     void Update()
@@ -35,20 +32,11 @@ public class HandClicked : MonoBehaviour
                         ClickRayAction(pos);
                     }
                 }
-                else {
+                else 
+                {
                     Vector2 pos = touch.position;
                     ClickRayAction(pos);
                 }
-            }
-
-            if (state == TouchPhase.Stationary) 
-            {
-
-            }
-
-            if (state == TouchPhase.Ended)
-            {
- 
             }
         }
 #if UNITY_EDITOR
@@ -72,6 +60,9 @@ public class HandClicked : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// 是否点击在UI层，用于拦截掉点击UI时同时触发3D射线
+    /// </summary>
     private bool IsPointerOverUIObject(Vector2 posOnScreen)
     {
         PointerEventData eventDataCurrentPosition = new PointerEventData(EventSystem.current);
