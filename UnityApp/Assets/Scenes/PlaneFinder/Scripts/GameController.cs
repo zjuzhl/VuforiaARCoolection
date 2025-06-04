@@ -1,39 +1,47 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameController : MonoBehaviour
 {
-    private static GameController _instance;
-    public static GameController instance{
-        get {
-            return _instance;
-        }
-    }
-
     public HandClicked handClicked;
     public HandRotate handRotate;
     public PlayBtn playBtn;
     public PlaceAndMove placeAndMove;
 
-    public Transform switchBtn;
+    public Button switchBtn;
+    private bool switched = true;
     public Transform placedSuccessPanel;
 
     private void Awake()
     {
-        _instance = this;
     }
 
     // Start is called before the first frame update
     void Start()
     {
         placedSuccessPanel.gameObject.SetActive(false);
+        playBtn.playBtn.gameObject.SetActive(true);
         switchBtn.gameObject.SetActive(false);
 
         playBtn.onPlacedEvent = () =>
         {
             StartCoroutine(nameof(ShowSuccessPanel));
         };
+
+        switchBtn.onClick.AddListener(() =>
+        {
+            if (switched)
+            {
+                SwitchTansuo();
+            }
+            else
+            {
+                SwitchJiaohu();
+            }
+            switched = !switched;
+        });
 
         handClicked.onClicked = (trans) =>
         {
@@ -66,7 +74,7 @@ public class GameController : MonoBehaviour
         handClicked.enable = true;
         handRotate.enable = true;
         placeAndMove.Revert();
-        switchBtn.Find("moshiTxt").GetComponent<TMPro.TMP_Text>().text = "当前模式：交互模式";
+        switchBtn.transform.Find("moshiTxt").GetComponent<TMPro.TMP_Text>().text = "当前模式：交互模式";
     }
 
     public void SwitchTansuo()
@@ -74,6 +82,6 @@ public class GameController : MonoBehaviour
         placeAndMove.enable = true;
         handClicked.enable = false;
         handRotate.enable = false;
-        switchBtn.Find("moshiTxt").GetComponent<TMPro.TMP_Text>().text = "当前模式：探索模式";
+        switchBtn.transform.Find("moshiTxt").GetComponent<TMPro.TMP_Text>().text = "当前模式：探索模式";
     }
 }
