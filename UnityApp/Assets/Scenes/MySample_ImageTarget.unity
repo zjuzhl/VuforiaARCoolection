@@ -687,6 +687,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetTrans: {fileID: 1323758524}
+  mObserverBehaviour: {fileID: 1351445977}
 --- !u!1 &853893234
 GameObject:
   m_ObjectHideFlags: 0
@@ -1365,7 +1366,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1176084446}
-  - component: {fileID: 1176084447}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -1389,14 +1389,6 @@ Transform:
   - {fileID: 2793870}
   m_Father: {fileID: 1407610884}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &1176084447
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1176084445}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1323758523
 GameObject:
   m_ObjectHideFlags: 0
@@ -1406,7 +1398,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1323758524}
-  - component: {fileID: 1323758527}
   - component: {fileID: 1323758528}
   m_Layer: 10
   m_Name: Cube
@@ -1432,14 +1423,6 @@ Transform:
   - {fileID: 1565216194}
   m_Father: {fileID: 1351445978}
   m_LocalEulerAnglesHint: {x: 0, y: -96.446, z: 0}
---- !u!33 &1323758527
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1323758523}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!95 &1323758528
 Animator:
   serializedVersion: 5
