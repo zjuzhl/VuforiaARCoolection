@@ -94,6 +94,7 @@ public class HandRotate : MonoBehaviour
         if (Input.touchCount == 2) 
         {
             if (!scaleTarget) return; // 没有可缩放的对象
+            if (!scaleTarget.gameObject.activeInHierarchy) return; // 可缩放的对象未显示
 
             var touch0 = Input.GetTouch(0);
             var touch1 = Input.GetTouch(1);
