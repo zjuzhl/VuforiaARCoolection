@@ -23,6 +23,7 @@ public class GameController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        IntertivePage.SetActive(false);
         targetBehaviour.OnTargetStatusChanged += OnStatusChanged;
     }
 
@@ -56,26 +57,21 @@ public class GameController : MonoBehaviour
 
     public void CommandDogStand() 
     {
-        Target.GetComponent<Animator>().Play("0_standing_0", -1, 0);
+        Target.GetComponent<Animator>().SetTrigger("Play1");
     }
 
     public void CommandDogSit()
     {
-        Target.GetComponent<Animator>().Play("0_sitting_0", -1, 0);
+        Target.GetComponent<Animator>().SetTrigger("Play2");
     }
 
     public void CommandDogShake()
     {
-        Target.GetComponent<Animator>().Play("0_shake_0", -1, 0);
+        Target.GetComponent<Animator>().SetTrigger("Play3");
     }
 
     public void CommandDogRollover()
     {
-        Target.GetComponent<Animator>().Play("0_rollover_0", -1, 0);
-    }
-
-    public void CommandDogPlayDead()
-    {
-        Target.GetComponent<Animator>().Play("0_play_dead_0", -1, 0);
+        Target.GetComponent<Animator>().SetTrigger("Play4");
     }
 }   
