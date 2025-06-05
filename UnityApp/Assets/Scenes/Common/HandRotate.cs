@@ -20,8 +20,7 @@ public class HandRotate : MonoBehaviour
     public float minScaleSize = 0.5f;
     private Vector3 prescale;
     private float curScaleSize = 1.0f;
-
-    public bool enable = false;
+    public bool scaleEnable = false;
 
     // Start is called before the first frame update
     void Start()
@@ -44,78 +43,83 @@ public class HandRotate : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!enable) return;
 
-        if (Input.touchCount == 1) 
+        if (xrotEnable || yrotEnable) 
         {
-            if (!colliderTarget || !rotateTarget) return; 
-
-            var touch = Input.GetTouch(0);
-            var state = touch.phase;
-            if (state == TouchPhase.Began) 
+            if (Input.touchCount == 1)
             {
-                var ray = Camera.main.ScreenPointToRay(touch.position);
-                if (Physics.Raycast(ray, out RaycastHit hitInfo, 1000, 1 << LayerMask.NameToLayer("Rotate"))) 
+                if (!colliderTarget || !rotateTarget) return;
+
+                var touch = Input.GetTouch(0);
+                var state = touch.phase;
+                if (state == TouchPhase.Began)
                 {
-                    if (hitInfo.transform == colliderTarget) 
+                    var ray = Camera.main.ScreenPointToRay(touch.position);
+                    if (Physics.Raycast(ray, out RaycastHit hitInfo, 1000, 1 << LayerMask.NameToLayer("Rotate")))
                     {
-                        isDragging = true;
+                        if (hitInfo.transform == colliderTarget)
+                        {
+                            isDragging = true;
+                        }
                     }
                 }
-            }
-            else if (state == TouchPhase.Moved)
-            {
-                if (isDragging && rotateTarget != null) 
+                else if (state == TouchPhase.Moved)
                 {
-                    var delta = touch.deltaPosition;
-                    if (Screen.orientation == ScreenOrientation.Portrait) 
+                    if (isDragging && rotateTarget != null)
                     {
-                        if (xrotEnable)
-                            rotateTarget.Rotate(Vector3.up, -delta.x * rotationSpeed * Time.deltaTime, Space.Self);
-                        if (yrotEnable)
-                            rotateTarget.Rotate(Vector3.right, delta.y * rotationSpeed * Time.deltaTime, Space.World);
-                    }
+                        var delta = touch.deltaPosition;
+                        if (Screen.orientation == ScreenOrientation.Portrait)
+                        {
+                            if (xrotEnable)
+                                rotateTarget.Rotate(Vector3.up, -delta.x * rotationSpeed * Time.deltaTime, Space.Self);
+                            if (yrotEnable)
+                                rotateTarget.Rotate(Vector3.right, delta.y * rotationSpeed * Time.deltaTime, Space.World);
+                        }
 
-                    if (Screen.orientation == ScreenOrientation.LandscapeLeft) 
-                    {
-                        if (xrotEnable)
-                            rotateTarget.Rotate(Vector3.up, -delta.x * rotationSpeed * Time.deltaTime, Space.Self);
-                        if (yrotEnable)
-                            rotateTarget.Rotate(Vector3.right, delta.y * rotationSpeed * Time.deltaTime, Space.World);
+                        if (Screen.orientation == ScreenOrientation.LandscapeLeft)
+                        {
+                            if (xrotEnable)
+                                rotateTarget.Rotate(Vector3.up, -delta.x * rotationSpeed * Time.deltaTime, Space.Self);
+                            if (yrotEnable)
+                                rotateTarget.Rotate(Vector3.right, delta.y * rotationSpeed * Time.deltaTime, Space.World);
+                        }
                     }
                 }
-            }
-            else if (state == TouchPhase.Ended)
-            {
-                isDragging = false;
+                else if (state == TouchPhase.Ended)
+                {
+                    isDragging = false;
+                }
             }
         }
 
-        if (Input.touchCount == 2) 
+        if (scaleEnable) 
         {
-            if (!scaleTarget) return; // 没有可缩放的对象
+            if (Input.touchCount == 2)
+            {
+                if (!scaleTarget) return; // 没有可缩放的对象
 
-            var touch0 = Input.GetTouch(0);
-            var touch1 = Input.GetTouch(1);
-            var dis = Vector2.Distance(touch1.position, touch0.position);
-            
-            if (touch0.phase == TouchPhase.Began || touch1.phase == TouchPhase.Began)
-            {
-                curTouchesDis = dis;// 当触摸开始时，记录初始距离
-            }
-            else if (touch0.phase == TouchPhase.Moved || touch1.phase == TouchPhase.Moved) 
-            {
-                if (curTouchesDis <= 0) return;
-                var l = dis - curTouchesDis;
-                curScaleSize += (l * 0.1f * scaleSpeed);
-                if (curScaleSize >= maxScaleSize) curScaleSize = maxScaleSize;
-                if (curScaleSize <= minScaleSize) curScaleSize = minScaleSize;
-                scaleTarget.localScale = prescale * curScaleSize;
-                curTouchesDis = dis;
-            }
-            if (touch0.phase == TouchPhase.Ended || touch1.phase == TouchPhase.Ended) 
-            {
-                curTouchesDis = 0;
+                var touch0 = Input.GetTouch(0);
+                var touch1 = Input.GetTouch(1);
+                var dis = Vector2.Distance(touch1.position, touch0.position);
+
+                if (touch0.phase == TouchPhase.Began || touch1.phase == TouchPhase.Began)
+                {
+                    curTouchesDis = dis;// 当触摸开始时，记录初始距离
+                }
+                else if (touch0.phase == TouchPhase.Moved || touch1.phase == TouchPhase.Moved)
+                {
+                    if (curTouchesDis <= 0) return;
+                    var l = dis - curTouchesDis;
+                    curScaleSize += (l * 0.1f * scaleSpeed);
+                    if (curScaleSize >= maxScaleSize) curScaleSize = maxScaleSize;
+                    if (curScaleSize <= minScaleSize) curScaleSize = minScaleSize;
+                    scaleTarget.localScale = prescale * curScaleSize;
+                    curTouchesDis = dis;
+                }
+                if (touch0.phase == TouchPhase.Ended || touch1.phase == TouchPhase.Ended)
+                {
+                    curTouchesDis = 0;
+                }
             }
         }
     }

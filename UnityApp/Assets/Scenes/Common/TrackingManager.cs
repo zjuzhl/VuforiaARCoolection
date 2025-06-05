@@ -9,9 +9,9 @@ public class TrackingManager : MonoBehaviour
     public Action<Transform> onLost;
 
     public ObserverBehaviour mObserverBehaviour;
-    public bool trackingStatus 
+    public Status trackingStatus 
     {
-        get { return mObserverBehaviour.TargetStatus.Status == Status.TRACKED; }
+        get { return mObserverBehaviour.TargetStatus.Status; }
     }
 
     public string trackingTargetName
