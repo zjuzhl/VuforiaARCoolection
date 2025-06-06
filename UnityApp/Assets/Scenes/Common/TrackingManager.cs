@@ -22,18 +22,18 @@ public class TrackingManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        targetTrans.gameObject.SetActive(false);
+        //targetTrans.gameObject.SetActive(false);
     }
 
     public void OnTargetTracked() 
     {
-        targetTrans.gameObject.SetActive(true);
+        //targetTrans.gameObject.SetActive(true);
         onTracked?.Invoke(targetTrans);
     }
 
     public void OnTargetLost()
     {
-        targetTrans.gameObject.SetActive(false);
+        //targetTrans.gameObject.SetActive(false);
         onLost?.Invoke(targetTrans);
     }
 }

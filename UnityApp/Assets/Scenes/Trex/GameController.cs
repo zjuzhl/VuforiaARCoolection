@@ -11,6 +11,7 @@ public class GameController : MonoBehaviour
     public Transform targetRootInMarker;
 
     public Transform descPanel;
+    public AudioSource descAudio;
 
     public HandRotate handRotate;
     public TrackingManager trackingManager;
@@ -65,14 +66,10 @@ public class GameController : MonoBehaviour
                     EnterMidCamMode();
             }
         }
-        if (targetPose == TargetPose.InMarker)
-        {
-            if (!handRotate.scaleEnable) handRotate.scaleEnable = true;
-        }
 
         if (movingTarget) 
         {
-            target.localPosition = Vector3.MoveTowards(target.localPosition, Vector3.zero, 0.01f);
+            target.localPosition = Vector3.MoveTowards(target.localPosition, Vector3.zero, 0.06f);
             target.localRotation = Quaternion.RotateTowards(target.localRotation, Quaternion.identity, 10f);
             if(targetPose == TargetPose.InMidCam || targetPose == TargetPose.InUpDesc)
                 target.localScale = Vector3.MoveTowards(target.localScale, 0.5f * Vector3.one, 0.1f); // …Ë∂®Àı∑≈
@@ -92,6 +89,13 @@ public class GameController : MonoBehaviour
             movingTarget = true;
             descPanel.parent.GetComponent<Animator>().Play("DescHidden", -1, 0);
             targetPose = TargetPose.InMarker;
+
+            handRotate.scaleEnable = true;
+            handRotate.xrotEnable = true;
+            handRotate.yrotEnable = true;
+            SetComponentsEnabled(target, true);
+
+            descAudio.Stop();
         }
     }
 
@@ -111,7 +115,12 @@ public class GameController : MonoBehaviour
             }
             targetPose = TargetPose.InMidCam;
 
-            handRotate.scaleEnable = false;
+            handRotate.scaleEnable = true;
+            handRotate.xrotEnable = true;
+            handRotate.yrotEnable = true;
+            SetComponentsEnabled(target, true);
+
+            descAudio.Stop();
         }
     }
 
@@ -121,13 +130,37 @@ public class GameController : MonoBehaviour
         {
             targetPose = TargetPose.InUpDesc;
 
-            handRotate.scaleEnable = false;
-
             target.SetParent(targetRootInDesc);
             movingTarget = true;
             descPanel.parent.GetComponent<Animator>().Play("DescShowing", -1, 0);
+
+            handRotate.scaleEnable = false;
+            handRotate.xrotEnable = false;
+            handRotate.yrotEnable = false;
+            SetComponentsEnabled(target, true);
+
+            descAudio.Play();
         }
     }
 
 
+    void SetComponentsEnabled(Transform t,  bool enable)
+    {
+        var components = t.GetComponentsInChildren<Component>();
+        foreach (var component in components)
+        {
+            switch (component)
+            {
+                case Renderer rendererComponent:
+                    rendererComponent.enabled = enable;
+                    break;
+                case Collider colliderComponent:
+                    colliderComponent.enabled = enable;
+                    break;
+                case Canvas canvasComponent:
+                    canvasComponent.enabled = enable;
+                    break;
+            }
+        }
+    }
 }
