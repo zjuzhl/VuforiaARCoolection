@@ -21,12 +21,6 @@ public class VideoFisrtFrame : MonoBehaviour
         GetFirstFrame();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     void GetFirstFrame() 
     {
         videoPlayer.waitForFirstFrame = true;

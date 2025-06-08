@@ -21,7 +21,7 @@ public class TrackingManager : MonoBehaviour
 
     public void OnTargetLost()
     {
-        targetTrans.gameObject.SetActive(false);
+        targetTrans.gameObject.SetActive(false); 
         onLost?.Invoke(targetTrans);
     }
 }
