@@ -10,6 +10,7 @@ public class TargetCtrl1 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        // 检测用户点击到碰撞盒回调
         handClicked.onClicked = (Transform trans) =>
         {
             if (trans.name == "bird1")
