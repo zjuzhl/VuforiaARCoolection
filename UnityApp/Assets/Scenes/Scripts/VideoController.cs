@@ -53,6 +53,11 @@ public class VideoController : MonoBehaviour
             btnPlay.gameObject.SetActive(false);
             btnPause.gameObject.SetActive(false);
         });
+
+        videoPlayer.loopPointReached += (VideoPlayer source) =>
+        {
+            SetVideoReady();
+        };
     }
 
     public void SetVideoReady() 

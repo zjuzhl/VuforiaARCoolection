@@ -51,21 +51,21 @@ public class LoadScene : MonoBehaviour
             float progress = Mathf.Clamp01(operation.progress / 0.9f);
 
             // 更新进度条
-            progressText.text = "加载中..." + Mathf.FloorToInt(progress * 100) + "%";
+            progressText.text = "加载中..." + Mathf.FloorToInt(progress * 99) + "%";
 
             // 当加载进度达到0.9时，表示加载完成，等待用户操作
             if (operation.progress >= 0.9f)
             {
                 var diff = Time.time - loadingStartTime;
                 Debug.Log("diff time: " + diff);
-                if (diff >= 1.0f)
+                if (diff >= 0.5f)
                 {
                     operation.allowSceneActivation = true; // 激活场景
                     yield return new WaitForSeconds(0.1f);
                     loadingPanel.gameObject.SetActive(false);
                 }
                 else {
-                    yield return new WaitForSeconds(1.0f - diff);
+                    yield return new WaitForSeconds(0.5f - diff);
                     operation.allowSceneActivation = true; // 激活场景
                     yield return new WaitForSeconds(0.1f);
                     loadingPanel.gameObject.SetActive(false);
