@@ -58,6 +58,12 @@ public class VideoController : MonoBehaviour
         {
             SetVideoReady();
         };
+
+        transform.Find("Frame").GetComponent<MPUIKIT.MPImage>().enabled = true;
+        videoPlayer.prepareCompleted += (VideoPlayer source) =>
+        {
+            transform.Find("Frame").GetComponent<MPUIKIT.MPImage>().enabled = false;
+        };
     }
 
     public void SetVideoReady() 

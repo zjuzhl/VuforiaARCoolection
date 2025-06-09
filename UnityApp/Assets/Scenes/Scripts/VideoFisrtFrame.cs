@@ -18,7 +18,7 @@ public class VideoFisrtFrame : MonoBehaviour
     void Start()
     {
         videoPlayer = GetComponent<VideoPlayer>();
-        GetFirstFrame();
+        //GetFirstFrame();
     }
 
     void GetFirstFrame() 
@@ -38,8 +38,6 @@ public class VideoFisrtFrame : MonoBehaviour
             videoPlayer.sendFrameReadyEvents = false;
             videoPlayer.Stop();
             videoPlayer.SetDirectAudioVolume(0, 1);
-
-            transform.Find("Frame").GetComponent<MPUIKIT.MPImage>().enabled = false ;
         }
     }
 }

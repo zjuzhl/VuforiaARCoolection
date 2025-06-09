@@ -27,13 +27,23 @@ public class MenuController : MonoBehaviour
         {
             var path = "Menu" + i + "/Button";
             var scenename = "MySample_ImageTarget" + i;
-            content.Find(path).GetComponent<Button>().onClick.AddListener(() =>
+            var arBtn = content.Find(path).GetComponent<Button>();
+            arBtn.onClick.AddListener(() =>
             {
                 Debug.Log("clicked: " + path);
-
-                if (curMenu != null)
+                var m = arBtn.transform.parent;
+                if (m != null)
                 {
-                    curMenu.GetComponentInChildren<VideoController>().SetVideoReady();
+                    m.Find("Actived").GetComponent<MPUIKIT.MPImage>().enabled = true;
+                    m.GetComponentInChildren<VideoController>().SetVideoReady();
+                    if (curMenu != null) 
+                    {
+                        if (curMenu.name != m.name) 
+                        {
+                            curMenu.Find("Actived").GetComponent<MPUIKIT.MPImage>().enabled = false;
+                            curMenu.GetComponentInChildren<VideoController>().SetVideoReady();
+                        }
+                    }
                 }
                 loadScene.doLoadScene(scenename);
             });
