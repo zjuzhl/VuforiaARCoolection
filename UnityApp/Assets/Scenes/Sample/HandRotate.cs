@@ -4,6 +4,14 @@ using UnityEngine;
 
 public class HandRotate : MonoBehaviour
 {
+    public Transform colliderTarget;
+    public Transform rotateTarget;
+    public float rotationSpeed = 8f;
+    public bool xrotEnable = false;
+    public bool yrotEnable = false;
+    private bool isDragging = false;
+    private Quaternion prequa;
+
     // scale
     public Transform scaleTarget;
     private float curTouchesDis = 0;
@@ -18,7 +26,13 @@ public class HandRotate : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        if (rotateTarget) prequa = rotateTarget.localRotation;
         if (scaleTarget) prescale = scaleTarget.localScale;
+    }
+
+    public void resetPose() 
+    {
+        if (rotateTarget) rotateTarget.localRotation = prequa;
     }
 
     public void resetScale()
@@ -32,10 +46,55 @@ public class HandRotate : MonoBehaviour
     {
         if (!enable) return;
 
+        if (Input.touchCount == 1) 
+        {
+            if (!colliderTarget || !rotateTarget) return; 
+
+            var touch = Input.GetTouch(0);
+            var state = touch.phase;
+            if (state == TouchPhase.Began) 
+            {
+                var ray = Camera.main.ScreenPointToRay(touch.position);
+                if (Physics.Raycast(ray, out RaycastHit hitInfo, 1000, 1 << LayerMask.NameToLayer("Rotate"))) 
+                {
+                    if (hitInfo.transform == colliderTarget) 
+                    {
+                        isDragging = true;
+                    }
+                }
+            }
+            else if (state == TouchPhase.Moved)
+            {
+                if (isDragging && rotateTarget != null) 
+                {
+                    var delta = touch.deltaPosition;
+                    if (Screen.orientation == ScreenOrientation.Portrait) 
+                    {
+                        if (xrotEnable)
+                            rotateTarget.Rotate(Vector3.up, -delta.x * rotationSpeed * Time.deltaTime, Space.Self);
+                        if (yrotEnable)
+                            rotateTarget.Rotate(Vector3.right, delta.y * rotationSpeed * Time.deltaTime, Space.World);
+                    }
+
+                    if (Screen.orientation == ScreenOrientation.LandscapeLeft) 
+                    {
+                        if (xrotEnable)
+                            rotateTarget.Rotate(Vector3.up, -delta.x * rotationSpeed * Time.deltaTime, Space.Self);
+                        if (yrotEnable)
+                            rotateTarget.Rotate(Vector3.right, delta.y * rotationSpeed * Time.deltaTime, Space.World);
+                    }
+                }
+            }
+            else if (state == TouchPhase.Ended)
+            {
+                isDragging = false;
+            }
+        }
+
         if (Input.touchCount == 2) 
         {
             if (!scaleTarget) return; // 没有可缩放的对象
-            if (!scaleTarget.gameObject.activeInHierarchy) return; // 可缩放对象未显示
+            if (!scaleTarget.gameObject.activeInHierarchy) return; // 可缩放的对象未显示
 
             var touch0 = Input.GetTouch(0);
             var touch1 = Input.GetTouch(1);
