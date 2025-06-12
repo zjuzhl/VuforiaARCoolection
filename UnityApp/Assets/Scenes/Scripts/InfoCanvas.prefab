@@ -60,7 +60,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.7971698, g: 0.7971698, b: 0.7971698, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -235,7 +235,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 900}
+  m_SizeDelta: {x: 0, y: 1400}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &1319066831038984361
 GameObject:
@@ -399,8 +399,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -425, y: 458.00003}
-  m_SizeDelta: {x: 300, y: 100}
+  m_AnchoredPosition: {x: -474.99997, y: 458.00003}
+  m_SizeDelta: {x: 400, y: 100}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!222 &8087805385959958865
 CanvasRenderer:
@@ -766,7 +766,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -771, y: 458}
+  m_AnchoredPosition: {x: -821, y: 458}
   m_SizeDelta: {x: 300, y: 100}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!222 &1852641633908994625
@@ -992,10 +992,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u7B80\u4ECB"
+  m_text: Wiki
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: f6e479442f2db6c4c9aea10091c5a696, type: 2}
-  m_sharedMaterial: {fileID: 2788644238293553138, guid: f6e479442f2db6c4c9aea10091c5a696, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1097,7 +1097,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -82, y: 458.00003}
+  m_AnchoredPosition: {x: -19.99998, y: 458.00003}
   m_SizeDelta: {x: 300, y: 100}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!222 &5190227105287614539
@@ -1470,10 +1470,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u89C6\u9891"
+  m_text: Static Pose
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: f6e479442f2db6c4c9aea10091c5a696, type: 2}
-  m_sharedMaterial: {fileID: 2788644238293553138, guid: f6e479442f2db6c4c9aea10091c5a696, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1822,7 +1822,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 8.5000305, y: -133}
+  m_AnchoredPosition: {x: 8.5, y: -133}
   m_SizeDelta: {x: 17, y: 266}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3474045102113785310
@@ -1853,10 +1853,26 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "<b>\u5927\u5C71\u96C0</b>\uFF0C\u53C8\u79F0\u5927\u566A\u9E5B\uFF0C\u662F\u4E00\u79CD\u4F53\u6001\u9B41\u68A7\u3001\u7FBD\u6BDB\u7EDA\u4E3D\u7684\u9E1F\u7C7B\uFF0C\u5C5E\u4E8E\u5C71\u96C0\u79D1\u3002\n<b>\u5916\u89C2\u7279\u5F81\uFF1A</b>\u5927\u5C71\u96C0\u4F53\u578B\u8F83\u5927\uFF0C\u4F53\u957F\u7EA625-30\u5398\u7C73\u3002\u7FBD\u6BDB\u5448\u73B0\u51FA\u591A\u79CD\u9C9C\u8273\u7684\u989C\u8272\uFF0C\u4E3B\u8981\u4EE5\u9ED1\u3001\u767D\u3001\u6A59\u7B49\u8272\u5F69\u4E3A\u4E3B\uFF0C\u5934\u90E8\u6709\u660E\u663E\u7684\u7FBD\u51A0\uFF0C\u773C\u5468\u88F8\u9732\u76AE\u80A4\u5448\u84DD\u8272\u3002\u6574\u4F53\u5916\u89C2\u975E\u5E38\u5F15\u4EBA\u6CE8\u76EE\u3002\n<b>\u5206\u5E03\u5730\u533A\uFF1A</b>\u5927\u5C71\u96C0\u4E3B\u8981\u5206\u5E03\u4E8E\u4E2D\u56FD\u7684\u534E\u5357\u3001\u534E\u4E2D\u548C\u4E1C\u5357\u5730\u533A\uFF0C\u5E38\u89C1\u4E8E\u6D77\u62D4500-2000\u7C73\u7684\u5C71\u5730\u68EE\u6797\u3001\u7AF9\u6797\u548C\u704C\u4E1B\u4E2D\uFF0C\u559C\u6B22\u751F\u6D3B\u5728\u5BC6\u6797\u6DF1\u5904\u3002\n<b>\u751F\u6D3B\u4E60\u6027\uFF1A</b>\u5927\u5C71\u96C0\u662F\u4E00\u79CD\u6D3B\u6CFC\u597D\u52A8\u7684\u9E1F\u7C7B\uFF0C\u5584\u4E8E\u8DF3\u8DC3\u548C\u98DE\u884C\uFF0C\u5E38\u5E38\u6210\u7FA4\u6D3B\u52A8\u3002\u4EE5\u6606\u866B\u3001\u679C\u5B9E\u3001\u79CD\u5B50\u7B49\u4E3A\u98DF\uFF0C\u6742\u98DF\u6027\u3002\n<b>\u9E23\u53EB\u7279\u70B9\uFF1A</b>\u5927\u5C71\u96C0\u7684\u53EB\u58F0\u60A6\u8033\u52A8\u542C\uFF0C\u58F0\u97F3\u6E05\u6670\u54CD\u4EAE\uFF0C\u5E38\u5E38\u4EE5\u591A\u79CD\u58F0\u97F3\u7EC4\u5408\u800C\u6210\u7684\u590D\u6742\u9E23\u53EB\u6765\u8868\u8FBE\u81EA\u5DF1\u7684\u60C5\u7EEA\u548C\u9886\u5730\u3002\n<b>\u7E41\u6B96\u4E60\u6027\uFF1A</b>\u5927\u5C71\u96C0\u901A\u5E38\u9009\u62E9\u6811\u6D1E\u6216\u704C\u6728\u4E1B\u4E2D\u7684\u6811\u679D\u642D\u5EFA\u5DE2\u7A74\uFF0C\u6BCF\u7A9D\u4EA7\u5375\u6570\u76EE\u8F83\u591A\u3002\u96CC\u9E1F\u8D1F\u8D23\u5B75\u5316\u5375\uFF0C\u96C4\u9E1F\u5219\u8D1F\u8D23\u89C5\u98DF\u5582\u517B\u5E7C\u9E1F\u3002"
+  m_text: "    The <b>monarch butterfly</b> or simply monarch (Danaus plexippus)
+    is a milkweed butterfly (subfamily Danainae) in the family Nymphalidae. Other
+    common names, depending on region, include milkweed, common tiger, wanderer,
+    and black-veined brown. It is among the most familiar of North American butterflies
+    and an iconic pollinator, although it is not an especially effective pollinator
+    of milkweeds. Its wings feature an easily recognizable black, orange, and white
+    pattern, with a wingspan of 8.9\u201310.2 cm (3.5\u20134.0 in). A M\xFCllerian
+    mimic, the viceroy butterfly, is similar in color and pattern, but is markedly
+    smaller and has an extra black stripe across each hindwing.\r\n    The eastern
+    North American monarch population is notable for its annual southward late-summer/autumn
+    instinctive migration from the northern and central United States and southern
+    Canada to Florida and Mexico. During the fall migration, monarchs cover thousands
+    of miles, with a corresponding multigenerational return north in spring. The
+    western North American population of monarchs west of the Rocky Mountains often
+    migrates to sites in southern California, but have been found in overwintering
+    Mexican sites, as well. Non-migratory populations are found further south in
+    the Americas, and in parts of Europe, Oceania, and Southeast Asia.\r\n"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: f6e479442f2db6c4c9aea10091c5a696, type: 2}
-  m_sharedMaterial: {fileID: 2788644238293553138, guid: f6e479442f2db6c4c9aea10091c5a696, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1892,7 +1908,7 @@ MonoBehaviour:
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: 0
+  m_lineSpacing: 20
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
@@ -1998,7 +2014,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
-  m_DrawShape: 0
+  m_DrawShape: 3
   m_ImageType: 0
   m_MaterialMode: 0
   m_StrokeWidth: 0
@@ -2013,8 +2029,8 @@ MonoBehaviour:
     m_CornerRadius: {x: 0, y: 0, z: 0}
     m_UniformCornerRadius: 0
   m_Rectangle:
-    m_CornerRadius: {x: 0, y: 0, z: 0, w: 0}
-    m_UniformCornerRadius: 0
+    m_CornerRadius: {x: 16, y: 16, z: 16, w: 16}
+    m_UniformCornerRadius: 1
   m_Circle:
     m_Radius: 0
     m_FitRadius: 0
@@ -2132,7 +2148,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.65643555, g: 0.9481132, b: 0.32647294, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2332,7 +2348,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 0.72545004, b: 0.05098039, a: 0.6901961}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2729,10 +2745,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u5927\u5B57\u62A5"
+  m_text: Fly Pose
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: f6e479442f2db6c4c9aea10091c5a696, type: 2}
-  m_sharedMaterial: {fileID: 2788644238293553138, guid: f6e479442f2db6c4c9aea10091c5a696, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
