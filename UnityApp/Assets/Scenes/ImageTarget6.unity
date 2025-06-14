@@ -140,9 +140,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 744068930724076913, guid: 9e63b7dac64645640925bb89b012fcfd, type: 3}
       propertyPath: m_text
-      value: "This species can be found from the Indian subcontinent eastwards to
-        South-East Asia and East Asia, the eastern limit being the Philippines, and
-        the southern limit being Indonesia. \r\nCethosia biblis is a medium-sized
+      value: "    This species can be found from the Indian subcontinent eastwards
+        to South-East Asia and East Asia, the eastern limit being the Philippines,
+        and the southern limit being Indonesia. \r\nCethosia biblis is a medium-sized
         butterfly, with a wingspan reaching about 8\u20139 centimetres (3.1\u20133.5
         in). In this species the sexes are dimorphic. In males the dorsal sides of
         the wings are bright orange red, framed by a black outline with white spots.
@@ -152,8 +152,8 @@ PrefabInstance:
         predators that the red lacewing has a bad taste, deriving from the poisonous
         host plants of the caterpillars. The dorsal sides of the wings of the females
         are greyish-brownish with black spots and white bands and spots on the black
-        margins.\r\nCaterpillars have several reddish, black and white stripes, a
-        black head and long black spikes that contain poison. In fact they mainly
+        margins.\r\n    Caterpillars have several reddish, black and white stripes,
+        a black head and long black spikes that contain poison. In fact they mainly
         feed on poisonous climbing plants, mainly Passiflora species (P. cochinchinensis,
         P. moluccana, etc.).\r\n"
       objectReference: {fileID: 0}
@@ -193,14 +193,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 141129f2e60ef314696a16d0b5a513cb, type: 3}
-    - target: {fileID: 3540335150062953838, guid: 9e63b7dac64645640925bb89b012fcfd, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 265.99982
-      objectReference: {fileID: 0}
-    - target: {fileID: 3540335150062953838, guid: 9e63b7dac64645640925bb89b012fcfd, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -132.99991
-      objectReference: {fileID: 0}
+    - target: {fileID: 3246295019500425025, guid: 9e63b7dac64645640925bb89b012fcfd, type: 3}
+      propertyPath: CubeTarget
+      value: 
+      objectReference: {fileID: 1323758524}
     - target: {fileID: 4365881963883151818, guid: 9e63b7dac64645640925bb89b012fcfd, type: 3}
       propertyPath: m_VideoClip
       value: 
@@ -259,7 +255,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5624845421056018254, guid: 9e63b7dac64645640925bb89b012fcfd, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.18
+      value: -1.056
       objectReference: {fileID: 0}
     - target: {fileID: 5624845421056018254, guid: 9e63b7dac64645640925bb89b012fcfd, type: 3}
       propertyPath: m_LocalRotation.w
@@ -283,7 +279,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5624845421056018254, guid: 9e63b7dac64645640925bb89b012fcfd, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.093
+      value: -0.088
       objectReference: {fileID: 0}
     - target: {fileID: 5624845421056018254, guid: 9e63b7dac64645640925bb89b012fcfd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -296,6 +292,10 @@ PrefabInstance:
     - target: {fileID: 5624845421056018254, guid: 9e63b7dac64645640925bb89b012fcfd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5726108541665197793, guid: 9e63b7dac64645640925bb89b012fcfd, type: 3}
+      propertyPath: m_Size
+      value: 0.45749986
       objectReference: {fileID: 0}
     - target: {fileID: 6512392517140969813, guid: 9e63b7dac64645640925bb89b012fcfd, type: 3}
       propertyPath: m_AnchorMax.x
@@ -327,7 +327,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8621622409311374995, guid: 9e63b7dac64645640925bb89b012fcfd, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -0.000061035156
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

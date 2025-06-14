@@ -1160,6 +1160,10 @@ PrefabInstance:
       propertyPath: m_AnchorMin.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3246295019500425025, guid: 9e63b7dac64645640925bb89b012fcfd, type: 3}
+      propertyPath: CubeTarget
+      value: 
+      objectReference: {fileID: 1323758524}
     - target: {fileID: 5269999550109450860, guid: 9e63b7dac64645640925bb89b012fcfd, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -1210,7 +1214,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5624845421056018254, guid: 9e63b7dac64645640925bb89b012fcfd, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.195
+      value: -1.056
       objectReference: {fileID: 0}
     - target: {fileID: 5624845421056018254, guid: 9e63b7dac64645640925bb89b012fcfd, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1234,7 +1238,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5624845421056018254, guid: 9e63b7dac64645640925bb89b012fcfd, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.103
+      value: -0.09
       objectReference: {fileID: 0}
     - target: {fileID: 5624845421056018254, guid: 9e63b7dac64645640925bb89b012fcfd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

@@ -5,60 +5,37 @@ using UnityEngine;
 
 public class InfosController : MonoBehaviour
 {
-    public Button BanbaoBtn;
-    public Button JianjieBtn;
-    public Button VideoBtn;
+    private Button JianjieBtn;
+    private Button StaticPoseBtn;
+    private Button FlyPoseBtn;
 
-    public Button VideoPlayBtn;
-    public Button VideoPauseBtn;
+    private Transform JianjieInfo;
 
-    public Transform BanbaoInfo;
-    public Transform JianjieInfo;
-    public Transform VideoInfo;
+    public Transform CubeTarget;
 
     // Start is called before the first frame update
     void Start()
     {
-        BanbaoInfo = transform.Find("BanbaoInfo");
         JianjieInfo = transform.Find("JianjieInfo");
-        VideoInfo = transform.Find("VideoInfo");
 
-        BanbaoBtn = transform.Find("Banbao").GetComponent<Button>();
         JianjieBtn = transform.Find("Jianjie").GetComponent<Button>();
-        VideoBtn = transform.Find("Video").GetComponent<Button>();
+        StaticPoseBtn = transform.Find("StaticPose").GetComponent<Button>();
+        FlyPoseBtn = transform.Find("FlyPose").GetComponent<Button>();
 
-        VideoPlayBtn = VideoInfo.Find("Play").GetComponent<Button>();
-        VideoPauseBtn = VideoInfo.Find("Pause").GetComponent<Button>();
-
-        BanbaoInfo.gameObject.SetActive(false);
         JianjieInfo.gameObject.SetActive(false);
-        VideoInfo.gameObject.SetActive(false);
 
-        BanbaoBtn.onClick.AddListener(()=> {
-            BanbaoInfo.gameObject.SetActive(true);
-            JianjieInfo.gameObject.SetActive(false);
-            VideoInfo.gameObject.SetActive(false);
+        JianjieBtn.onClick.AddListener(()=> {
+            JianjieInfo.gameObject.SetActive(!JianjieInfo.gameObject.activeSelf);
         });
 
-        JianjieBtn.onClick.AddListener(() => {
-            BanbaoInfo.gameObject.SetActive(false);
-            JianjieInfo.gameObject.SetActive(true);
-            VideoInfo.gameObject.SetActive(false);
+        StaticPoseBtn.onClick.AddListener(() => {
+            CubeTarget.GetComponentInChildren<Animator>().Play("idle", -1, 0);
         });
 
-        VideoBtn.onClick.AddListener(() => {
-            BanbaoInfo.gameObject.SetActive(false);
-            JianjieInfo.gameObject.SetActive(false);
-            VideoInfo.gameObject.SetActive(true);
+        FlyPoseBtn.onClick.AddListener(() => {
+            CubeTarget.GetComponentInChildren<Animator>().Play("fly", -1, 0);
         });
 
-        VideoPlayBtn.onClick.AddListener(()=> {
-            VideoInfo.GetComponent<UnityEngine.Video.VideoPlayer>().Play();
-        });
-
-        VideoPauseBtn.onClick.AddListener(() => {
-            VideoInfo.GetComponent<UnityEngine.Video.VideoPlayer>().Pause();
-        });
     }
 
     // Update is called once per frame

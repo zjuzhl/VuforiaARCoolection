@@ -2103,6 +2103,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 1285801ee34afca44a96bd01e157676a, type: 3}
+    - target: {fileID: 3246295019500425025, guid: 9e63b7dac64645640925bb89b012fcfd, type: 3}
+      propertyPath: CubeTarget
+      value: 
+      objectReference: {fileID: 1323758524}
     - target: {fileID: 4365881963883151818, guid: 9e63b7dac64645640925bb89b012fcfd, type: 3}
       propertyPath: m_VideoClip
       value: 
@@ -2161,7 +2165,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5624845421056018254, guid: 9e63b7dac64645640925bb89b012fcfd, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.17
+      value: -1.052
       objectReference: {fileID: 0}
     - target: {fileID: 5624845421056018254, guid: 9e63b7dac64645640925bb89b012fcfd, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2185,7 +2189,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5624845421056018254, guid: 9e63b7dac64645640925bb89b012fcfd, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.099
+      value: -0.092
       objectReference: {fileID: 0}
     - target: {fileID: 5624845421056018254, guid: 9e63b7dac64645640925bb89b012fcfd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
