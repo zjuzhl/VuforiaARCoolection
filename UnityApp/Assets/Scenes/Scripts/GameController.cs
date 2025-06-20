@@ -17,6 +17,7 @@ public class GameController : MonoBehaviour
 
     public Transform Target1;
     public Transform Target2;
+    public Transform Target4;
 
     public Transform TargetPanel1;
     public Transform TargetPanel2;
@@ -119,6 +120,8 @@ public class GameController : MonoBehaviour
         };
         trackingMgr4.onLost += (Transform trans) =>
         {
+            Target4.localPosition = new Vector3(-0.09f, 0, -0.412f);
+            Target4.localRotation = Quaternion.identity;
             TargetPanel4.gameObject.SetActive(false);
         };
 

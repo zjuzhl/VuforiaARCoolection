@@ -27,10 +27,10 @@ public class HandMove : MonoBehaviour
         {
             if (target)
             {
-                target.position = Vector3.MoveTowards(target.position, originPos, 0.05f);
-                if (Vector3.Distance(target.position, originPos) < 0.03f) 
+                target.localPosition = Vector3.MoveTowards(target.localPosition, originPos, 0.05f);
+                if (Vector3.Distance(target.localPosition, originPos) < 0.001f) 
                 {
-                    target.position = originPos;
+                    target.localPosition = originPos;
                     isMovingBack = false;
                     target = null;
                 }
@@ -53,7 +53,27 @@ public class HandMove : MonoBehaviour
                 if (Physics.Raycast(ray, out RaycastHit hitInfo, 1000, 1 << 20))
                 {
                     target = hitInfo.transform;
-                    originPos = target.position;
+                    //originPos = target.position;
+                    if (target.name == "brush_red")
+                    {
+                        originPos = new Vector3(0.26f, 0.05f, -0.726f);
+                    }
+                    else if (target.name == "brush_white") 
+                    {
+                        originPos = new Vector3(0.13f, 0.05f, -0.726f);
+                    }
+                    else if (target.name == "brush_black")
+                    {
+                        originPos = new Vector3(0.0f, 0.05f, -0.726f);
+                    }
+                    else if (target.name == "brush_brown")
+                    {
+                        originPos = new Vector3(-0.13f, 0.05f, -0.726f);
+                    }
+                    else if (target.name == "brush_yellow")
+                    {
+                        originPos = new Vector3(-0.26f, 0.05f, -0.726f);
+                    }
                     isMovingBack = false;
                     hittedTargetPlane = false;
                     return;

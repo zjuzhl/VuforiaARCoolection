@@ -13,6 +13,6 @@ public class AutoRotate : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        this.transform.Rotate(Vector3.up, -0.1f);
+        this.transform.Rotate(Vector3.up, -0.2f);
     }
 }
