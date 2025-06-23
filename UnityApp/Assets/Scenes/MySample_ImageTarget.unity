@@ -5239,7 +5239,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.3529412}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.78431374}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -5409,7 +5409,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -5599,7 +5599,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -5851,7 +5851,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6887930782398087865, guid: 31d732ec2108dc644a4c62d8c351bd7e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.6803
+      value: -1.764
       objectReference: {fileID: 0}
     - target: {fileID: 6887930782398087865, guid: 31d732ec2108dc644a4c62d8c351bd7e, type: 3}
       propertyPath: m_LocalPosition.y
@@ -10828,8 +10828,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.18149833, y: 0.18637429, z: 0.05131593}
-  m_Center: {x: 0.037218668, y: -0.15619312, z: -0.00018962727}
+  m_Size: {x: 0.1814175, y: 0.1863743, z: 0.05131593}
+  m_Center: {x: -0.011678136, y: -0.15619312, z: -0.00018963711}
 --- !u!114 &270583024
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11229,7 +11229,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -11430,7 +11430,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.3529412}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.78431374}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -12648,7 +12648,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -13060,7 +13060,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8573355219322227723, guid: 7336f65de2786b247aff13cb33b68350, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.1465
+      value: -0.203
       objectReference: {fileID: 0}
     - target: {fileID: 8573355219322227723, guid: 7336f65de2786b247aff13cb33b68350, type: 3}
       propertyPath: m_LocalPosition.y
@@ -18065,7 +18065,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &975553559
 RectTransform:
   m_ObjectHideFlags: 0
@@ -19576,7 +19576,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.3529412}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.78431374}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -21498,7 +21498,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1453881250
 RectTransform:
   m_ObjectHideFlags: 0
@@ -21957,7 +21957,7 @@ MonoBehaviour:
   rotateTarget: {fileID: 1573403541}
   rotationSpeed: 8
   xrotEnable: 1
-  yrotEnable: 1
+  yrotEnable: 0
   scaleTarget: {fileID: 1573403541}
   scaleSpeed: 0.02
   maxScaleSize: 2
@@ -22078,8 +22078,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.17912006, y: 0.20334244, z: 0.051315926}
-  m_Center: {x: -0.014298916, y: 0.00057142973, z: -0.00018946454}
+  m_Size: {x: 0.18774986, y: 0.20334244, z: 0.05131593}
+  m_Center: {x: -0.07024975, y: 0.00057142973, z: -0.00018946527}
 --- !u!114 &1605417613
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22322,7 +22322,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.3529412}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.78431374}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -22651,7 +22651,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.3529412}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.78431374}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -28544,8 +28544,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -29411,6 +29411,7 @@ MonoBehaviour:
   handMove: {fileID: 1083286739}
   Target1: {fileID: 134462268}
   Target2: {fileID: 1083286738}
+  Target4: {fileID: 1573403541}
   TargetPanel1: {fileID: 1453881250}
   TargetPanel2: {fileID: 1963621393}
   TargetPanel3: {fileID: 1022554060}
@@ -34717,6 +34718,6 @@ SceneRoots:
   - {fileID: 1133611812}
   - {fileID: 2143198715}
   - {fileID: 986710999}
-  - {fileID: 1862107976}
-  - {fileID: 1249241649}
   - {fileID: 1157496581}
+  - {fileID: 1249241649}
+  - {fileID: 1862107976}

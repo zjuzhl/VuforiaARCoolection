@@ -27,10 +27,10 @@ public class HandMove : MonoBehaviour
         {
             if (target)
             {
-                target.position = Vector3.MoveTowards(target.position, originPos, 0.05f);
-                if (Vector3.Distance(target.position, originPos) < 0.03f) 
+                target.localPosition = Vector3.MoveTowards(target.localPosition, originPos, 0.05f);
+                if (Vector3.Distance(target.localPosition, originPos) < 0.001f) 
                 {
-                    target.position = originPos;
+                    target.localPosition = originPos;
                     isMovingBack = false;
                     target = null;
                 }
@@ -44,7 +44,6 @@ public class HandMove : MonoBehaviour
         if (Input.touchCount == 1) 
         {
             if (isMovingBack) return;
-
             var touch = Input.GetTouch(0);
             var phase = touch.phase;
             if (phase == TouchPhase.Began) 
@@ -53,7 +52,12 @@ public class HandMove : MonoBehaviour
                 if (Physics.Raycast(ray, out RaycastHit hitInfo, 1000, 1 << 20))
                 {
                     target = hitInfo.transform;
-                    originPos = target.position;
+                    //originPos = target.position;
+                    originPos = target.name == "brush_red" ? new Vector3(0.26f, 0.05f, -0.726f) :
+                        target.name == "brush_white" ? new Vector3(0.13f, 0.05f, -0.726f) :
+                        target.name == "brush_black" ? new Vector3(0.0f, 0.05f, -0.726f) :
+                        target.name == "brush_brown" ? new Vector3(-0.13f, 0.05f, -0.726f) :
+                        target.name == "brush_yellow" ? new Vector3(-0.26f, 0.05f, -0.726f) : Vector3.zero;
                     isMovingBack = false;
                     hittedTargetPlane = false;
                     return;
@@ -68,16 +72,13 @@ public class HandMove : MonoBehaviour
                     if (Physics.Raycast(ray, out RaycastHit hitInfo1, 1000, 1 << 22))
                     {
                         hittedTargetPlane = true;
-                        // 高亮
-                        areaMat.SetFloat("_Opacity", 0.5f);
+                        areaMat.SetFloat("_Opacity", 0.5f); // 高亮
                     }
                     else
                     {
                         hittedTargetPlane = false;
-                        // 取消高亮
-                        areaMat.SetFloat("_Opacity", 0.0f);
+                        areaMat.SetFloat("_Opacity", 0.0f); // 取消高亮
                     }
-
                     if (Physics.Raycast(ray, out RaycastHit hitInfo2, 1000, 1 << 21))
                     {
                         target.position = hitInfo2.point;
@@ -88,7 +89,6 @@ public class HandMove : MonoBehaviour
             if (phase == TouchPhase.Ended)
             {
                 isMovingBack = true;
-
                 if (target && hittedTargetPlane) 
                 {
                     switch (target.name) 
