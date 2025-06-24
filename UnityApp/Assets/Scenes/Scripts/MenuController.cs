@@ -48,6 +48,7 @@ public class MenuController : MonoBehaviour
                     cld.gameObject.SetActive(cld.name == videoname);
                 }
                 VideoPanel.Find("VideoClose").gameObject.SetActive(true);
+                VideoPanel.Find("VideoDesc").gameObject.SetActive(true);
                 VideoPanel.Find(videoname).GetComponent<VideoController>().InitVideoState();
             });
         }
