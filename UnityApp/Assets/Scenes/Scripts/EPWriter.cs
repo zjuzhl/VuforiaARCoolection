@@ -4,13 +4,16 @@ using UnityEngine;
 
 public class EPWriter : MonoBehaviour
 {
-
-    public int sceneId = 1;
     // Start is called before the first frame update
     void Start()
     {
-        PlayerPrefs.SetInt("ImageTarget" + sceneId, 1);
-        PlayerPrefs.Save();
+
     }
 
+    public void SaveTracked(string sceneTag) 
+    {
+        //PlayerPrefs.SetInt("ImageTarget" + sceneId, 1);
+        PlayerPrefs.SetInt(sceneTag, 1);
+        PlayerPrefs.Save();
+    }
 }
