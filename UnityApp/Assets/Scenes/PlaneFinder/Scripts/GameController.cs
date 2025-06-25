@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Vuforia;
 
 public class GameController : MonoBehaviour
 {
@@ -14,19 +15,20 @@ public class GameController : MonoBehaviour
     private bool switched = true;
     public Transform placedSuccessPanel;
 
-    private void Awake()
-    {
-    }
+    public Transform scaningTip;
+    private bool firstTracked = false;
 
     // Start is called before the first frame update
     void Start()
     {
         placedSuccessPanel.gameObject.SetActive(false);
+        scaningTip.gameObject.SetActive(true);
         playBtn.playBtn.gameObject.SetActive(true);
         switchBtn.gameObject.SetActive(false);
 
         playBtn.onPlacedEvent = () =>
         {
+            scaningTip.gameObject.SetActive(false);
             StartCoroutine(nameof(ShowSuccessPanel));
         };
 
@@ -62,10 +64,14 @@ public class GameController : MonoBehaviour
         SwitchJiaohu();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void OnTracked() 
     {
-        
+        if (!firstTracked) 
+        {
+            firstTracked = true;
+            scaningTip.gameObject.SetActive(false);
+            playBtn.playBtn.gameObject.SetActive(true);
+        }
     }
 
     public void SwitchJiaohu() 
