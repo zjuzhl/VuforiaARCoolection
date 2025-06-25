@@ -25,6 +25,11 @@ public class HandRotate : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        resetOriginalPose();
+    }
+
+    public void resetOriginalPose() 
+    {
         if (rotateTarget) prequa = rotateTarget.localRotation;
         if (scaleTarget) prescale = scaleTarget.localScale;
     }

@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Material_001
-  m_Shader: {fileID: 4800000, guid: 5bf9a36cde1cc6a4581ae2ba3c886f7a, type: 3}
+  m_Shader: {fileID: 4800000, guid: 93cb242261e85884a8fec40fcd31fc3b, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -23,34 +23,34 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
-    - _diffuseTexture:
-        m_Texture: {fileID: 2800000, guid: d302d0a1df98dc7418c3ee9ccfb7c7f5, type: 3}
+    - _baseColorTexture:
+        m_Texture: {fileID: 2800000, guid: ee2f6741d1a2c5a4fa614bf39d987e7c, type: 3}
         m_Scale: {x: 1, y: -1}
         m_Offset: {x: 0, y: 1}
     - _emissiveTexture:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
+        m_Texture: {fileID: 2800000, guid: ff12df79b21b6cf42973069b2aaf89c2, type: 3}
+        m_Scale: {x: 1, y: -1}
+        m_Offset: {x: 0, y: 1}
+    - _metallicRoughnessTexture:
+        m_Texture: {fileID: 2800000, guid: ce058b494421d9546b5042209a5eb8e0, type: 3}
+        m_Scale: {x: 1, y: -1}
+        m_Offset: {x: 0, y: 1}
     - _normalTexture:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
+        m_Texture: {fileID: 2800000, guid: 849dad53bc42709439f3517047df517f, type: 3}
+        m_Scale: {x: 1, y: -1}
+        m_Offset: {x: 0, y: 1}
     - _occlusionTexture:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _specularGlossinessTexture:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
     - _Cull: 0
-    - _glossinessFactor: 1
     - _linear: 1
+    - _metallicFactor: 0.14545454
+    - _roughnessFactor: 1
     - _runtime: 0
     m_Colors:
-    - _diffuseFactor: {r: 0.90605545, g: 0.90605545, b: 0.90605545, a: 1}
-    - _emissiveFactor: {r: 0, g: 0, b: 0, a: 1}
-    - _specularFactor: {r: 0, g: 0, b: 0, a: 1}
+    - _baseColorFactor: {r: 1, g: 1, b: 1, a: 1}
+    - _emissiveFactor: {r: 0.7353569, g: 0.7353569, b: 0.7353569, a: 1}
   m_BuildTextureStacks: []
