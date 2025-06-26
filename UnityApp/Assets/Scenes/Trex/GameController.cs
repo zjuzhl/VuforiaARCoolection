@@ -40,13 +40,13 @@ public class GameController : MonoBehaviour
     void Start()
     {
         targetPose = TargetPose.None;
-        UpdateTarget();
+
         trackingMgr1.onTracked += (Transform trans) =>
         {
-            if (targetPose == TargetPose.InUpDesc) return;
             if (target != null && target.name != trans.name) 
             {
-                ResetMarkerMode();
+                if (targetPose == TargetPose.InUpDesc) { trans.gameObject.SetActive(false); return; };
+                ResetMarkerMode(); 
             }
             target = trans;
             trackingIndex = 1;
@@ -54,9 +54,9 @@ public class GameController : MonoBehaviour
         };
         trackingMgr2.onTracked += (Transform trans) =>
         {
-            if (targetPose == TargetPose.InUpDesc) return;
             if (target != null && target.name != trans.name)
             {
+                if (targetPose == TargetPose.InUpDesc) { trans.gameObject.SetActive(false); return; };
                 ResetMarkerMode();
             }
             target = trans;
@@ -65,9 +65,9 @@ public class GameController : MonoBehaviour
         };
         trackingMgr3.onTracked += (Transform trans) =>
         {
-            if (targetPose == TargetPose.InUpDesc) return;
             if (target != null && target.name != trans.name)
             {
+                if (targetPose == TargetPose.InUpDesc) { trans.gameObject.SetActive(false); return; };
                 ResetMarkerMode();
             }
             target = trans;
@@ -76,10 +76,9 @@ public class GameController : MonoBehaviour
         };
         trackingMgr4.onTracked += (Transform trans) =>
         {
-            if (targetPose == TargetPose.InUpDesc) return;
-            // ÖØ¸´Ê¶±ð
             if (target != null && target.name != trans.name)
             {
+                if (targetPose == TargetPose.InUpDesc) { trans.gameObject.SetActive(false); return; };
                 ResetMarkerMode();
             }
             target = trans;
@@ -123,6 +122,7 @@ public class GameController : MonoBehaviour
 
     void UpdateTarget() 
     {
+        target.gameObject.SetActive(true);
         backClearBtn.gameObject.SetActive(true);
         recogTipImg.SetActive(false);
         handRotate.colliderTarget = target;
