@@ -5,8 +5,6 @@ using Vuforia;
 
 public class GameController : MonoBehaviour
 {
-
-    public WaterWaveEffect waterWaveEffect;
     public ImageTargetBehaviour targetBehaviour;
     public GameObject Target;
 
@@ -50,7 +48,6 @@ public class GameController : MonoBehaviour
 
     public void StartClick() 
     {
-        waterWaveEffect.enabled = false;
         CanvasInCamera.SetActive(false);
         Btn_Bg.SetActive(false);
     }

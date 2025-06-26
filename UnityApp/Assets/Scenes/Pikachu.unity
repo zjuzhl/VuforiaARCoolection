@@ -1430,7 +1430,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aaafa190f228e2d478c4963031c282ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waterWaveEffect: {fileID: 1347018344}
   targetBehaviour: {fileID: 1351445977}
   Target: {fileID: 382545352}
   CanvasInCamera: {fileID: 1420603969}
@@ -2191,7 +2190,6 @@ GameObject:
   - component: {fileID: 1347018341}
   - component: {fileID: 1347018340}
   - component: {fileID: 1347018339}
-  - component: {fileID: 1347018344}
   m_Layer: 0
   m_Name: ARCamera
   m_TagString: MainCamera
@@ -2299,23 +2297,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1347018344
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1347018338}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 49c127ff6a36e3741a53bbb55477ec6d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  A: 0.01
-  w1: 30
-  w2: 10
-  waveWidth: 0.3
-  waveSpeed: 1.3
 --- !u!1 &1351445974
 GameObject:
   m_ObjectHideFlags: 0
