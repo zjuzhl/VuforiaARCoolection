@@ -215,9 +215,9 @@ SkinnedMeshRenderer:
   m_BlendShapeWeights: []
   m_RootBone: {fileID: 2795722219483639912}
   m_AABB:
-    m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: 0, y: 0, z: 0}
-  m_DirtyAABB: 1
+    m_Center: {x: 0.008598305, y: 0.42548412, z: 0.40620452}
+    m_Extent: {x: 0.2554803, y: 0.42697513, z: 0.526393}
+  m_DirtyAABB: 0
 --- !u!1 &328367281900389010
 GameObject:
   m_ObjectHideFlags: 0
@@ -1256,9 +1256,9 @@ SkinnedMeshRenderer:
   m_BlendShapeWeights: []
   m_RootBone: {fileID: 2795722219483639912}
   m_AABB:
-    m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: 0, y: 0, z: 0}
-  m_DirtyAABB: 1
+    m_Center: {x: 0.0011395216, y: 0.86592984, z: -0.03604997}
+    m_Extent: {x: 0.16413885, y: 0.15227774, z: 0.16936141}
+  m_DirtyAABB: 0
 --- !u!1 &2898719607545794581
 GameObject:
   m_ObjectHideFlags: 0
@@ -1441,9 +1441,9 @@ SkinnedMeshRenderer:
   m_BlendShapeWeights: []
   m_RootBone: {fileID: 2795722219483639912}
   m_AABB:
-    m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: 0, y: 0, z: 0}
-  m_DirtyAABB: 1
+    m_Center: {x: 0.0068422556, y: 0.42297074, z: 0.06833004}
+    m_Extent: {x: 0.28727418, y: 0.42819265, z: 0.2336111}
+  m_DirtyAABB: 0
 --- !u!1 &2972227790100685514
 GameObject:
   m_ObjectHideFlags: 0
@@ -2405,7 +2405,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7525664808434290195}
   - component: {fileID: 2784089365679206965}
-  - component: {fileID: 7826940423885765006}
   m_Layer: 0
   m_Name: tigress_kung_fu_panda_chi_master
   m_TagString: Untagged
@@ -2439,7 +2438,7 @@ Animator:
   m_GameObject: {fileID: 5157895694615026119}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3294875c8cd19cc4f9fab6df31fe9d34, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -2450,30 +2449,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &7826940423885765006
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5157895694615026119}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 69e8ad190e80fd540afdb1b01ab4ff8b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Clips:
-  - {fileID: 7400000, guid: 6c62864dde612d74a88a5cde2fb92933, type: 2}
-  - {fileID: 7400000, guid: 3bdd0e327f77a414a897474ab8983916, type: 2}
-  - {fileID: 7400000, guid: 0469aef855238b9428079f0dd48e4186, type: 2}
-  - {fileID: 7400000, guid: c12057c43c3a8a5489e4b882f3487440, type: 2}
-  - {fileID: 7400000, guid: 6740b5a02d6ace9489507cce9158b205, type: 2}
-  Names:
-  - Static Pose
-  - Armature|Armature|advence|Base Layer
-  - Armature|Armature|dazuo|Base Layer
-  - Armature|Armature|idle|Base Layer
-  - Armature|Armature|show|Base Layer
 --- !u!1 &5367582724141001061
 GameObject:
   m_ObjectHideFlags: 0

@@ -2170,7 +2170,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7404683437881191702}
   - component: {fileID: 7287137062901457713}
-  - component: {fileID: 5521515368378454182}
   m_Layer: 0
   m_Name: master_shifu_kung_fu_panda_chi_master
   m_TagString: Untagged
@@ -2215,32 +2214,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &5521515368378454182
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4280527213741214466}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 69e8ad190e80fd540afdb1b01ab4ff8b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Clips:
-  - {fileID: 7400000, guid: bf6f3785ca1fdae43adb1e02c5a3c8d0, type: 2}
-  - {fileID: 7400000, guid: e88410cd5919ec34c9f850577124f5b2, type: 2}
-  - {fileID: 7400000, guid: c3cf86ca188324e40ab2554d18e34670, type: 2}
-  - {fileID: 7400000, guid: 9fff039bc30858e459a32eb87973b434, type: 2}
-  - {fileID: 7400000, guid: 383e4b18707520b4285844384146c91c, type: 2}
-  - {fileID: 7400000, guid: 45bedc01ab488274f8194f763ec9595c, type: 2}
-  Names:
-  - Static Pose
-  - Armature|Armature|advence|Base Layer
-  - Armature|Armature|dazuo|Base Layer
-  - Armature|Armature|idle2|Base Layer
-  - Armature|Armature|idle|Base Layer
-  - Armature|Armature|show|Base Layer
 --- !u!1 &4313610720202818137
 GameObject:
   m_ObjectHideFlags: 0

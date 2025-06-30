@@ -3201,7 +3201,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2561226469875325444}
   - component: {fileID: 2131493320309645807}
-  - component: {fileID: 5706384775403600480}
   m_Layer: 0
   m_Name: master_oogway_kung_fu_panda_chi_master
   m_TagString: Untagged
@@ -3235,7 +3234,7 @@ Animator:
   m_GameObject: {fileID: 9010796363205043352}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: bec5efc6fa8e6d1468fa56148591828d, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -3246,32 +3245,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &5706384775403600480
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9010796363205043352}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 69e8ad190e80fd540afdb1b01ab4ff8b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Clips:
-  - {fileID: 7400000, guid: dceabe7e8f4d3e54da296f0956c87fd7, type: 2}
-  - {fileID: 7400000, guid: dd7c122bfc0da5b46b02df97c34584fb, type: 2}
-  - {fileID: 7400000, guid: 09565d0d10ec2fc4cb5dec8f75151d57, type: 2}
-  - {fileID: 7400000, guid: f8f9e7276d2072b42ba5f73e06d4eb0f, type: 2}
-  - {fileID: 7400000, guid: ddba348b8d7bb7b4b96a5e1de53f1916, type: 2}
-  - {fileID: 7400000, guid: 07497905b22510b4c8854c2b9ed41456, type: 2}
-  Names:
-  - Static Pose
-  - Armature|Armature|advence|Base Layer
-  - Armature|Armature|dazuo|Base Layer
-  - Armature|Armature|idle2|Base Layer
-  - Armature|Armature|idle|Base Layer
-  - Armature|Armature|show|Base Layer
 --- !u!1 &9171243787790374775
 GameObject:
   m_ObjectHideFlags: 0

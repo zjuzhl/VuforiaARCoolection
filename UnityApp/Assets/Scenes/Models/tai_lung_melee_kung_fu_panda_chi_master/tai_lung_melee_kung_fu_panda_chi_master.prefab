@@ -412,9 +412,9 @@ SkinnedMeshRenderer:
   m_BlendShapeWeights: []
   m_RootBone: {fileID: 8125863852107930782}
   m_AABB:
-    m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: 0, y: 0, z: 0}
-  m_DirtyAABB: 1
+    m_Center: {x: 0.1744358, y: 0.5984421, z: -0.14743763}
+    m_Extent: {x: 0.38981646, y: 0.60310066, z: 0.49426514}
+  m_DirtyAABB: 0
 --- !u!1 &1123247425984969514
 GameObject:
   m_ObjectHideFlags: 0
@@ -2641,7 +2641,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2717075513486063883}
   - component: {fileID: 7640130391163438017}
-  - component: {fileID: 1202028901238141461}
   m_Layer: 0
   m_Name: tai_lung_melee_kung_fu_panda_chi_master
   m_TagString: Untagged
@@ -2686,30 +2685,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &1202028901238141461
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7572043927321372088}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 69e8ad190e80fd540afdb1b01ab4ff8b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Clips:
-  - {fileID: 7400000, guid: fc88377a4ff1d5042b3de34c99e9bd48, type: 2}
-  - {fileID: 7400000, guid: d3b67fc4533fb8244b9cb4d0fd2b7593, type: 2}
-  - {fileID: 7400000, guid: 803181e6b11d5d54990537cc1d4e6d59, type: 2}
-  - {fileID: 7400000, guid: 2365d17a8506fcf4e9fd8dcb4c2069a8, type: 2}
-  - {fileID: 7400000, guid: e3f66faf2f4ac9c4ca9f805c167998db, type: 2}
-  Names:
-  - Static Pose
-  - Armature|Armature|advence|Base Layer
-  - Armature|Armature|dazuo|Base Layer
-  - Armature|Armature|idle|Base Layer
-  - Armature|Armature|show|Base Layer
 --- !u!1 &7697180264728443489
 GameObject:
   m_ObjectHideFlags: 0
