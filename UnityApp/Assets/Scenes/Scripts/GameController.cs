@@ -11,8 +11,11 @@ public class GameController : MonoBehaviour
     public GameObject CanvasBg;
     public GameObject Btn_Bg;
     public GameObject RecogTip;
+    public GameObject OverSpeedTip;
     public GameObject IntertivePage;
     private bool isInertive;
+
+    private float switchTime = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -20,6 +23,7 @@ public class GameController : MonoBehaviour
         Target.SetActive(false);
         CanvasBg.SetActive(true);
         RecogTip.SetActive(false);
+        OverSpeedTip.SetActive(false);
         IntertivePage.SetActive(false);
         isInertive = false;
 
@@ -72,21 +76,43 @@ public class GameController : MonoBehaviour
     public void CommandDogPose1() 
     {
         Target.GetComponentInChildren<Animator>().SetTrigger("Play1");
+        CheckSwitchTime();
     }
 
     public void CommandDogPose2()
     {
         Target.GetComponentInChildren<Animator>().SetTrigger("Play2");
+        CheckSwitchTime();
     }
 
     public void CommandDogPose3()
     {
         Target.GetComponentInChildren<Animator>().SetTrigger("Play3");
+        CheckSwitchTime();
     }
 
     public void CommandDogPose4()
     {
         Target.GetComponentInChildren<Animator>().SetTrigger("Play4");
+        CheckSwitchTime();
+    }
+
+    public void CheckSwitchTime() 
+    {
+        if (switchTime > 0 && (Time.time - switchTime) <= 1.0f) 
+        {
+            if (!OverSpeedTip.activeSelf) 
+            {
+                OverSpeedTip.SetActive(true);
+                Invoke(nameof(CloseSpeedTip), 3.0f);
+            }
+        }
+        switchTime = Time.time;
+    }
+
+    public void CloseSpeedTip() 
+    {
+        OverSpeedTip.SetActive(false);
     }
     #endregion
 }
