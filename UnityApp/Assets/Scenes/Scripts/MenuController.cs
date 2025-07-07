@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class MenuController : MonoBehaviour
 {
+    public Button btnVideoOpen;
+    public GameObject VideoPanel;
     public Button btnJumpAR;
     public LoadScene loadScene;
 
@@ -14,6 +16,12 @@ public class MenuController : MonoBehaviour
         btnJumpAR.onClick.AddListener(() =>
         {
             loadScene.doLoadScene("ImageTarget1");
+        });
+
+        VideoPanel.SetActive(false);
+        btnVideoOpen.onClick.AddListener(()=> 
+        {
+            VideoPanel.SetActive(true);
         });
     }
 
