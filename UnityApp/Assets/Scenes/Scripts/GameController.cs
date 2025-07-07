@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class GameController : MonoBehaviour
 {
-
-    public EPWriter epWriter;
     public TrackingManager trackingManager;
 
     public int sceneId = 1;
@@ -13,10 +11,7 @@ public class GameController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        trackingManager.onTracked += (Transform trans) =>
-        {
-            epWriter.SaveTracked("ImageTarget" + sceneId);
-        };
+
     }
 
     // Update is called once per frame
