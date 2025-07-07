@@ -10,12 +10,6 @@ public class VideoPanelCtrl : MonoBehaviour
     {
         this.transform.Find("VideoClose").GetComponent<Button>().onClick.AddListener(() =>
         {
-            var cc = transform.childCount;
-            for (int j = 0; j < cc; j++)
-            {
-                var cld = transform.GetChild(j);
-                cld.gameObject.SetActive(false);
-            }
             this.transform.gameObject.SetActive(false);
         });
     }

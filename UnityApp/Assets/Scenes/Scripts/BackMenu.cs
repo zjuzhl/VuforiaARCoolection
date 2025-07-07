@@ -5,7 +5,6 @@ using UnityEngine;
 
 public class BackMenu : MonoBehaviour
 {
-
     public LoadScene loadScene;
 
     // Start is called before the first frame update
@@ -14,7 +13,6 @@ public class BackMenu : MonoBehaviour
         var loading = GameObject.Find("LoadingCanvas");
         if (loading) 
         {
-            Debug.Log("Find LoadingCanvas");
             loadScene = loading.GetComponent<LoadScene>();
         }
 
