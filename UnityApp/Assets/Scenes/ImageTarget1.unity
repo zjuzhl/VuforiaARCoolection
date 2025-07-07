@@ -940,7 +940,7 @@ Transform:
   - {fileID: 223317687}
   - {fileID: 854576159}
   - {fileID: 1941666810}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1351445978}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1323758525
 BoxCollider:
@@ -1203,7 +1203,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1323758524}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1351445979
@@ -1621,14 +1622,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 325495960312529526, guid: e810de240c7b6ab478fa98f2f3610325, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 600
-      objectReference: {fileID: 0}
-    - target: {fileID: 325495960312529526, guid: e810de240c7b6ab478fa98f2f3610325, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -240
-      objectReference: {fileID: 0}
     - target: {fileID: 2981311373169217428, guid: e810de240c7b6ab478fa98f2f3610325, type: 3}
       propertyPath: m_Name
       value: BackCanvas
@@ -1712,14 +1705,6 @@ PrefabInstance:
     - target: {fileID: 6988536299223329433, guid: e810de240c7b6ab478fa98f2f3610325, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8355871736789750046, guid: e810de240c7b6ab478fa98f2f3610325, type: 3}
-      propertyPath: m_fontSize
-      value: 44
-      objectReference: {fileID: 0}
-    - target: {fileID: 8355871736789750046, guid: e810de240c7b6ab478fa98f2f3610325, type: 3}
-      propertyPath: m_fontSizeBase
-      value: 44
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1899,4 +1884,3 @@ SceneRoots:
   - {fileID: 2143198715}
   - {fileID: 5479699958976520394}
   - {fileID: 1422734854}
-  - {fileID: 1323758524}
