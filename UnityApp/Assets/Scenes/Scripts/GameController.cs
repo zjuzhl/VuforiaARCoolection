@@ -10,6 +10,8 @@ public class GameController : MonoBehaviour
     public TMPro.TMP_Text NameDesc;
     public HorizontalScrollView horizontalScrollView;
 
+    public HandRotate handRotate;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -37,6 +39,8 @@ public class GameController : MonoBehaviour
 
     void OnSwicthItem(int id) 
     {
+        handRotate.resetPose();
+        handRotate.resetScale();
         NameDesc.transform.parent.gameObject.SetActive(true);
         NameDesc.text = id == 0 ? "方鼎，用于祭祀。" :
             id == 1 ? "食鼎，用于储存食物。" :
