@@ -5,24 +5,35 @@ using UnityEngine.UI;
 
 public class MenuController : MonoBehaviour
 {
-    public Button btnVideoOpen;
-    public GameObject VideoPanel;
-    public Button btnJumpAR;
+    public Transform Content;
     public LoadScene loadScene;
 
     // Start is called before the first frame update
     void Start()
     {
-        btnJumpAR.onClick.AddListener(() =>
-        {
-            loadScene.doLoadScene("ImageTarget1");
-        });
+        //btnJumpAR.onClick.AddListener(() =>
+        //{
+        //    loadScene.doLoadScene("ImageTarget1");
+        //});
 
-        VideoPanel.SetActive(false);
-        btnVideoOpen.onClick.AddListener(()=> 
+        var cc = Content.childCount;
+        for (int i = 1; i <= cc; i++) 
         {
-            VideoPanel.SetActive(true);
-        });
+            var idx = i;
+            var menu = Content.Find("Menu" + idx);
+            if (menu) 
+            {
+                var jpar = menu.Find("JumpAR");
+                if (jpar) 
+                {
+                    jpar.GetComponent<Button>().onClick.AddListener(()=> 
+                    {
+                        loadScene.doLoadScene("ImageTarget1");
+                    });
+                }
+            }
+
+        }
     }
 
 
