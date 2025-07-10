@@ -27,7 +27,6 @@ public class MenuController : MonoBehaviour
                 {
                     jpar.GetComponent<Button>().onClick.AddListener(()=> 
                     {
-                        if (prevIndex == idx) return;
                         if (prevIndex > 0)
                         {
                             var preMenu = Content.Find("Menu" + prevIndex);
@@ -48,8 +47,7 @@ public class MenuController : MonoBehaviour
                     abtn.Find("On").gameObject.SetActive(false);
                     abtn.GetComponent<Button>().onClick.AddListener(() =>
                     {
-                        if (prevIndex == idx) return;
-                        if (prevIndex > 0)
+                        if (prevIndex > 0 && prevIndex != idx)
                         {
                             var preMenu = Content.Find("Menu" + prevIndex);
                             preMenu.GetComponent<MPUIKIT.MPImage>().color = disposeColor;
@@ -57,9 +55,16 @@ public class MenuController : MonoBehaviour
                             preMenu.Find("AudioBtn").GetComponent<AudioSource>().Stop();
                         }
                         prevIndex = idx;
-                        abtn.GetComponent<AudioSource>().Play();
-                        abtn.Find("On").gameObject.SetActive(true);
                         menu.GetComponent<MPUIKIT.MPImage>().color = selectedColor;
+                        var asource = abtn.GetComponent<AudioSource>();
+                        if (asource.isPlaying) {
+                            abtn.GetComponent<AudioSource>().Stop();
+                            abtn.Find("On").gameObject.SetActive(false);
+                        }
+                        else {
+                            abtn.GetComponent<AudioSource>().Play();
+                            abtn.Find("On").gameObject.SetActive(true);
+                        }
                     });
                 }
             }
