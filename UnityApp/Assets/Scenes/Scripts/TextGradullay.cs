@@ -6,26 +6,26 @@ public class TextGradullay : MonoBehaviour
 {
     public float speedInTime = 1.0f;
     private bool enabledComp = false;
-    private TMP_Text m_TextComponent;
+    public TMP_Text m_TextComponent;
     private bool hasTextChanged;
-
-    void Awake()
-    {
-        m_TextComponent = gameObject.GetComponent<TMP_Text>();
-    }
-
+    private bool oneLoop = false;
 
     void Start()
     {
-        this.GetComponent<TMPro.TMP_Text>().enabled = false;
         enabledComp = true;
     }
 
     public void StartShow() 
     {
+        oneLoop = true;
         StartCoroutine(RevealCharacters(m_TextComponent));
     }
 
+    public void StopShow()
+    {
+        oneLoop = false;
+        m_TextComponent.maxVisibleCharacters = m_TextComponent.textInfo.characterCount;
+    }
 
     void OnEnable()
     {
@@ -60,7 +60,7 @@ public class TextGradullay : MonoBehaviour
 
         int totalVisibleCharacters = textInfo.characterCount; // Get # of Visible Character in text object
         int visibleCount = 0;
-        bool oneLoop = true;
+        //bool oneLoop = true;
         while (oneLoop)
         {
             if (hasTextChanged)
