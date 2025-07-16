@@ -49,7 +49,8 @@ public class GameController : MonoBehaviour
         {
             if (trans.name == "Target") 
             {
-                trans.GetComponentInChildren<Animator>().SetTrigger("Play" + Random.Range(1, 4).ToString());
+                // fix： 模型动画不够，暂不支持切换动画
+                //trans.GetComponentInChildren<Animator>().SetTrigger("Play" + Random.Range(1, 4).ToString());
             }
         };
     }

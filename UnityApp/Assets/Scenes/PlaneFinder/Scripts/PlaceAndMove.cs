@@ -36,7 +36,7 @@ public class PlaceAndMove : MonoBehaviour
             }
             else {
                 target.SetPositionAndRotation(
-                    Vector3.MoveTowards(target.position, terminalTrans.position, 0.04f), 
+                    Vector3.MoveTowards(target.position, terminalTrans.position, 0.03f), 
                     Quaternion.RotateTowards(target.rotation,
                     Quaternion.LookRotation(terminalTrans.position - target.position, Vector3.up), 10f));
             }
