@@ -6,6 +6,7 @@ public class TrackingManager : MonoBehaviour
 {
 
     public Transform targetTrans;
+    public ShowHappy showHappy;
 
     // Start is called before the first frame update
     void Start()
@@ -22,6 +23,7 @@ public class TrackingManager : MonoBehaviour
     public void OnTargetTracked() 
     {
         targetTrans.gameObject.SetActive(true);
+        showHappy.SwitchVisible(false);
     }
 
     public void OnTargetLost()

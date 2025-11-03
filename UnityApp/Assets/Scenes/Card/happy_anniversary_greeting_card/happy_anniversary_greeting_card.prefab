@@ -336,7 +336,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2574177872158113499}
   - component: {fileID: 6306072019412695701}
-  - component: {fileID: 6685256462831247728}
   m_Layer: 0
   m_Name: happy_anniversary_greeting_card
   m_TagString: Untagged
@@ -353,7 +352,7 @@ Transform:
   m_GameObject: {fileID: 3158395251468946695}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.452, y: 0.45, z: 0.4}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5990957030169585624}
@@ -370,7 +369,7 @@ Animator:
   m_GameObject: {fileID: 3158395251468946695}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4a4bd82c86d56d244a05d5257e8421c6, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -381,24 +380,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &6685256462831247728
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3158395251468946695}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 69e8ad190e80fd540afdb1b01ab4ff8b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Clips:
-  - {fileID: 7400000, guid: 212c9e1782b391e49a597f53d148ab58, type: 2}
-  - {fileID: 7400000, guid: 96da77d47cfd6f147bfe7612a71a75cf, type: 2}
-  Names:
-  - Static Pose
-  - Animation
 --- !u!1 &4241818586953864691
 GameObject:
   m_ObjectHideFlags: 0
