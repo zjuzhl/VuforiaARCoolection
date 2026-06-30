@@ -8,7 +8,6 @@ public class GameController : MonoBehaviour
     public ImageTargetBehaviour targetBehaviour; // 图片组件
     public GameObject Target;   // 跟踪模型
 
-    public GameObject CanvasBg;
     public GameObject Btn_Bg;
     public GameObject RecogTip;
     public GameObject OverSpeedTip;
@@ -17,16 +16,18 @@ public class GameController : MonoBehaviour
 
     private float switchTime = 0;
 
+    private Vuforia.Status preStatus;
+
     // Start is called before the first frame update
     void Start()
     {
         Target.SetActive(false);
-        CanvasBg.SetActive(true);
         RecogTip.SetActive(false);
         OverSpeedTip.SetActive(false);
         IntertivePage.SetActive(false);
         isInertive = false;
 
+        preStatus = Status.NO_POSE;
         targetBehaviour.OnTargetStatusChanged += OnStatusChanged;
     }
 
@@ -45,13 +46,15 @@ public class GameController : MonoBehaviour
     /// <param name="status"></param>
     public void OnStatusChanged(ObserverBehaviour observer, TargetStatus status)
     {
+        preStatus = status.Status;
         if (!isInertive) return;
 
-        if (status.Status == Status.TRACKED)
+        if (status.Status == Status.TRACKED || preStatus == Status.TRACKED)
         {
             Target.SetActive(true);
             IntertivePage.SetActive(true);
             RecogTip.SetActive(false);
+            preStatus = Status.NO_POSE; // reset
         }
         else if (status.Status == Status.LIMITED || status.Status == Status.EXTENDED_TRACKED) 
         {
@@ -66,7 +69,6 @@ public class GameController : MonoBehaviour
     /// </summary>
     public void StartClick() 
     {
-        CanvasBg.SetActive(false);
         Btn_Bg.SetActive(false);
         RecogTip.SetActive(true);
         isInertive = true;
@@ -76,6 +78,11 @@ public class GameController : MonoBehaviour
     public void CommandDogPose1() 
     {
         Target.GetComponentInChildren<Animator>().SetTrigger("Play1");
+        Target.GetComponentInChildren<Animator>().ResetTrigger("Play2");
+        Target.GetComponentInChildren<Animator>().ResetTrigger("Play3");
+        Target.GetComponentInChildren<Animator>().ResetTrigger("Play4");
+        Target.GetComponentInChildren<Animator>().ResetTrigger("Play5");
+        Target.GetComponentInChildren<Animator>().ResetTrigger("Play6");
         CheckSwitchTime();
     }
 
@@ -94,6 +101,18 @@ public class GameController : MonoBehaviour
     public void CommandDogPose4()
     {
         Target.GetComponentInChildren<Animator>().SetTrigger("Play4");
+        CheckSwitchTime();
+    }
+
+    public void CommandDogPose5()
+    {
+        Target.GetComponentInChildren<Animator>().SetTrigger("Play5");
+        CheckSwitchTime();
+    }
+
+    public void CommandDogPose6()
+    {
+        Target.GetComponentInChildren<Animator>().SetTrigger("Play6");
         CheckSwitchTime();
     }
 
