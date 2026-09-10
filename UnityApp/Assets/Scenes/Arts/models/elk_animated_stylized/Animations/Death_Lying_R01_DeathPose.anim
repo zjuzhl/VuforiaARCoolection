@@ -1,0 +1,1173 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!74 &7400000
+AnimationClip:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Death_Lying_R01_DeathPose
+  serializedVersion: 7
+  m_Legacy: 0
+  m_Compressed: 0
+  m_UseHighQualityCurve: 1
+  m_RotationCurves:
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0.29830405, y: -0.110318296, z: 0.22531557, w: -0.9209112}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sketchfab_model/7f0aee6ac6b74d0a87c684fa8a21b561_fbx/Object_2/RootNode/Elk_Animated/Object_5/_rootJoint/RigRoot_01/RigPelvis_02/RigLBLeg1_03/RigLBLeg2_04/RigLBLeg3_05/RigLBLegAnkle_06
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0.0051926845, y: 0.015013453, z: -0.6478527, w: -0.7615999}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sketchfab_model/7f0aee6ac6b74d0a87c684fa8a21b561_fbx/Object_2/RootNode/Elk_Animated/Object_5/_rootJoint/RigRoot_01/RigPelvis_02/RigLBLeg1_03/RigLBLeg2_04/RigLBLeg3_05
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0.123713344, y: -0.04947751, z: 0.5809356, w: -0.80297}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sketchfab_model/7f0aee6ac6b74d0a87c684fa8a21b561_fbx/Object_2/RootNode/Elk_Animated/Object_5/_rootJoint/RigRoot_01/RigPelvis_02/RigLBLeg1_03/RigLBLeg2_04
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0.079283535, y: 0.9808045, z: -0.1645011, w: 0.068381876}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sketchfab_model/7f0aee6ac6b74d0a87c684fa8a21b561_fbx/Object_2/RootNode/Elk_Animated/Object_5/_rootJoint/RigRoot_01/RigPelvis_02/RigLBLeg1_03
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0.02981103, y: -0.06162665, z: 0.1689144, w: -0.98325044}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sketchfab_model/7f0aee6ac6b74d0a87c684fa8a21b561_fbx/Object_2/RootNode/Elk_Animated/Object_5/_rootJoint/RigRoot_01/RigPelvis_02/RigRBLeg1_07/RigRBLeg2_08/RigRBLeg3_09/RigRBLegAnkle_010
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: -0.09572321, y: -0.0054856897, z: -0.669393, w: -0.7366953}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sketchfab_model/7f0aee6ac6b74d0a87c684fa8a21b561_fbx/Object_2/RootNode/Elk_Animated/Object_5/_rootJoint/RigRoot_01/RigPelvis_02/RigRBLeg1_07/RigRBLeg2_08/RigRBLeg3_09
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0.016154572, y: 0.029355448, z: 0.7045139, w: -0.7088988}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sketchfab_model/7f0aee6ac6b74d0a87c684fa8a21b561_fbx/Object_2/RootNode/Elk_Animated/Object_5/_rootJoint/RigRoot_01/RigPelvis_02/RigRBLeg1_07/RigRBLeg2_08
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0.06088432, y: 0.98598635, z: 0.15283199, w: -0.027682953}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sketchfab_model/7f0aee6ac6b74d0a87c684fa8a21b561_fbx/Object_2/RootNode/Elk_Animated/Object_5/_rootJoint/RigRoot_01/RigPelvis_02/RigRBLeg1_07
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0.38560185, y: 0.033633802, z: -0.012600831, w: -0.92196596}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sketchfab_model/7f0aee6ac6b74d0a87c684fa8a21b561_fbx/Object_2/RootNode/Elk_Animated/Object_5/_rootJoint/RigRoot_01/RigPelvis_02/RigSpine1_011/RigSpine2_012/RigChest_013/RigLFLegCollarbone_014/RigLFLeg1_015/RigLFLeg2_016/RigLFLeg3_017/RigLFLegAnkle_018
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: -0.23712316, y: 0.17433287, z: 0.49760273, w: -0.81594867}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sketchfab_model/7f0aee6ac6b74d0a87c684fa8a21b561_fbx/Object_2/RootNode/Elk_Animated/Object_5/_rootJoint/RigRoot_01/RigPelvis_02/RigSpine1_011/RigSpine2_012/RigChest_013/RigLFLegCollarbone_014/RigLFLeg1_015/RigLFLeg2_016/RigLFLeg3_017
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0.0938485, y: 0.010928405, z: -0.37120166, w: -0.9237328}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sketchfab_model/7f0aee6ac6b74d0a87c684fa8a21b561_fbx/Object_2/RootNode/Elk_Animated/Object_5/_rootJoint/RigRoot_01/RigPelvis_02/RigSpine1_011/RigSpine2_012/RigChest_013/RigLFLegCollarbone_014/RigLFLeg1_015/RigLFLeg2_016
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: -0.67923284, y: -0.12298091, z: -0.053170677, w: -0.72158945}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sketchfab_model/7f0aee6ac6b74d0a87c684fa8a21b561_fbx/Object_2/RootNode/Elk_Animated/Object_5/_rootJoint/RigRoot_01/RigPelvis_02/RigSpine1_011/RigSpine2_012/RigChest_013/RigLFLegCollarbone_014/RigLFLeg1_015
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0.48036778, y: 0.6914144, z: 0.32573512, w: 0.4302204}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sketchfab_model/7f0aee6ac6b74d0a87c684fa8a21b561_fbx/Object_2/RootNode/Elk_Animated/Object_5/_rootJoint/RigRoot_01/RigPelvis_02/RigSpine1_011/RigSpine2_012/RigChest_013/RigLFLegCollarbone_014
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0.021847775, y: 0.05997728, z: -0.7430493, w: -0.6661855}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sketchfab_model/7f0aee6ac6b74d0a87c684fa8a21b561_fbx/Object_2/RootNode/Elk_Animated/Object_5/_rootJoint/RigRoot_01/RigPelvis_02/RigSpine1_011/RigSpine2_012/RigChest_013/RigNeck1_019/RigNeck2_020/RigNeck3_021/RigHead_00/RigJaw1_022
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: -0.3280311, y: -0.59017104, z: -0.52449703, w: -0.5186488}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sketchfab_model/7f0aee6ac6b74d0a87c684fa8a21b561_fbx/Object_2/RootNode/Elk_Animated/Object_5/_rootJoint/RigRoot_01/RigPelvis_02/RigSpine1_011/RigSpine2_012/RigChest_013/RigNeck1_019/RigNeck2_020/RigNeck3_021/RigHead_00/RigLEar1_026
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0.08721319, y: -0.40233147, z: -0.71606845, w: -0.5637102}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sketchfab_model/7f0aee6ac6b74d0a87c684fa8a21b561_fbx/Object_2/RootNode/Elk_Animated/Object_5/_rootJoint/RigRoot_01/RigPelvis_02/RigSpine1_011/RigSpine2_012/RigChest_013/RigNeck1_019/RigNeck2_020/RigNeck3_021/RigHead_00/RigLEyelid_027
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: -0.06915708, y: 0.88356996, z: -0.100868456, w: -0.45204756}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sketchfab_model/7f0aee6ac6b74d0a87c684fa8a21b561_fbx/Object_2/RootNode/Elk_Animated/Object_5/_rootJoint/RigRoot_01/RigPelvis_02/RigSpine1_011/RigSpine2_012/RigChest_013/RigNeck1_019/RigNeck2_020/RigNeck3_021/RigHead_00/RigREar1_028
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: -0.15447682, y: 0.3815937, z: -0.60957754, w: -0.6774499}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sketchfab_model/7f0aee6ac6b74d0a87c684fa8a21b561_fbx/Object_2/RootNode/Elk_Animated/Object_5/_rootJoint/RigRoot_01/RigPelvis_02/RigSpine1_011/RigSpine2_012/RigChest_013/RigNeck1_019/RigNeck2_020/RigNeck3_021/RigHead_00/RigREyelid_029
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0.33736965, y: 0.1400384, z: 0.0043483768, w: -0.93088776}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sketchfab_model/7f0aee6ac6b74d0a87c684fa8a21b561_fbx/Object_2/RootNode/Elk_Animated/Object_5/_rootJoint/RigRoot_01/RigPelvis_02/RigSpine1_011/RigSpine2_012/RigChest_013/RigNeck1_019/RigNeck2_020/RigNeck3_021/RigHead_00
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0.011446881, y: 0.11515301, z: 0.042265397, w: -0.99238217}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sketchfab_model/7f0aee6ac6b74d0a87c684fa8a21b561_fbx/Object_2/RootNode/Elk_Animated/Object_5/_rootJoint/RigRoot_01/RigPelvis_02/RigSpine1_011/RigSpine2_012/RigChest_013/RigNeck1_019/RigNeck2_020/RigNeck3_021
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0.048734855, y: 0.10496792, z: -0.030746488, w: -0.99280477}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sketchfab_model/7f0aee6ac6b74d0a87c684fa8a21b561_fbx/Object_2/RootNode/Elk_Animated/Object_5/_rootJoint/RigRoot_01/RigPelvis_02/RigSpine1_011/RigSpine2_012/RigChest_013/RigNeck1_019/RigNeck2_020
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: -0.14481138, y: -0.13254012, z: -0.017646477, w: -0.9803833}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sketchfab_model/7f0aee6ac6b74d0a87c684fa8a21b561_fbx/Object_2/RootNode/Elk_Animated/Object_5/_rootJoint/RigRoot_01/RigPelvis_02/RigSpine1_011/RigSpine2_012/RigChest_013/RigNeck1_019
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0.089768894, y: -0.000044539778, z: 0.03996605, w: -0.9951604}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sketchfab_model/7f0aee6ac6b74d0a87c684fa8a21b561_fbx/Object_2/RootNode/Elk_Animated/Object_5/_rootJoint/RigRoot_01/RigPelvis_02/RigSpine1_011/RigSpine2_012/RigChest_013/RigRFLegCollarbone_030/RigRFLeg1_031/RigRFLeg2_032/RigRFLeg3_033/RigRFLegAnkle_034
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0.083823785, y: -0.009050551, z: 0.4411102, w: -0.8934839}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sketchfab_model/7f0aee6ac6b74d0a87c684fa8a21b561_fbx/Object_2/RootNode/Elk_Animated/Object_5/_rootJoint/RigRoot_01/RigPelvis_02/RigSpine1_011/RigSpine2_012/RigChest_013/RigRFLegCollarbone_030/RigRFLeg1_031/RigRFLeg2_032/RigRFLeg3_033
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: -0.19162846, y: 0.11050391, z: -0.4410992, w: -0.86976945}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sketchfab_model/7f0aee6ac6b74d0a87c684fa8a21b561_fbx/Object_2/RootNode/Elk_Animated/Object_5/_rootJoint/RigRoot_01/RigPelvis_02/RigSpine1_011/RigSpine2_012/RigChest_013/RigRFLegCollarbone_030/RigRFLeg1_031/RigRFLeg2_032
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0.6597462, y: 0.37933993, z: 0.005725972, w: -0.64869356}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sketchfab_model/7f0aee6ac6b74d0a87c684fa8a21b561_fbx/Object_2/RootNode/Elk_Animated/Object_5/_rootJoint/RigRoot_01/RigPelvis_02/RigSpine1_011/RigSpine2_012/RigChest_013/RigRFLegCollarbone_030/RigRFLeg1_031
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0.48041204, y: 0.5109601, z: -0.35702664, w: -0.6169733}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sketchfab_model/7f0aee6ac6b74d0a87c684fa8a21b561_fbx/Object_2/RootNode/Elk_Animated/Object_5/_rootJoint/RigRoot_01/RigPelvis_02/RigSpine1_011/RigSpine2_012/RigChest_013/RigRFLegCollarbone_030
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: -0.028477294, y: -0.010105368, z: -0.035188522, w: -0.9989238}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sketchfab_model/7f0aee6ac6b74d0a87c684fa8a21b561_fbx/Object_2/RootNode/Elk_Animated/Object_5/_rootJoint/RigRoot_01/RigPelvis_02/RigSpine1_011/RigSpine2_012/RigChest_013
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: -0.030089531, y: -0.0017290323, z: -0.104079664, w: -0.9941122}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sketchfab_model/7f0aee6ac6b74d0a87c684fa8a21b561_fbx/Object_2/RootNode/Elk_Animated/Object_5/_rootJoint/RigRoot_01/RigPelvis_02/RigSpine1_011/RigSpine2_012
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: -0.020624256, y: -0.019648915, z: -0.7252221, w: -0.68792546}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sketchfab_model/7f0aee6ac6b74d0a87c684fa8a21b561_fbx/Object_2/RootNode/Elk_Animated/Object_5/_rootJoint/RigRoot_01/RigPelvis_02/RigSpine1_011
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: -0.022116585, y: -0.1413287, z: 0.1385771, w: -0.97996604}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sketchfab_model/7f0aee6ac6b74d0a87c684fa8a21b561_fbx/Object_2/RootNode/Elk_Animated/Object_5/_rootJoint/RigRoot_01/RigPelvis_02/RigTail1_035/RigTail2_036
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0.30019584, y: 0.063237846, z: -0.91667366, w: 0.25611094}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sketchfab_model/7f0aee6ac6b74d0a87c684fa8a21b561_fbx/Object_2/RootNode/Elk_Animated/Object_5/_rootJoint/RigRoot_01/RigPelvis_02/RigTail1_035
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0.97283524, y: 0.22671275, z: -0.046818517, w: 0.0009898264}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sketchfab_model/7f0aee6ac6b74d0a87c684fa8a21b561_fbx/Object_2/RootNode/Elk_Animated/Object_5/_rootJoint/RigRoot_01/RigPelvis_02
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: -0.70710677, y: -1.5066486e-34, z: 1.5066486e-34, w: -0.70710677}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sketchfab_model/7f0aee6ac6b74d0a87c684fa8a21b561_fbx/Object_2/RootNode/Elk_Animated/Object_5/_rootJoint/RigRoot_01
+  m_CompressedRotationCurves: []
+  m_EulerCurves: []
+  m_PositionCurves:
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 40.254837, y: -0.0006866455, z: 0.00009095668}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sketchfab_model/7f0aee6ac6b74d0a87c684fa8a21b561_fbx/Object_2/RootNode/Elk_Animated/Object_5/_rootJoint/RigRoot_01/RigPelvis_02/RigLBLeg1_03/RigLBLeg2_04/RigLBLeg3_05/RigLBLegAnkle_06
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 39.4224, y: 0.0004348755, z: 0.00039625165}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sketchfab_model/7f0aee6ac6b74d0a87c684fa8a21b561_fbx/Object_2/RootNode/Elk_Animated/Object_5/_rootJoint/RigRoot_01/RigPelvis_02/RigLBLeg1_03/RigLBLeg2_04/RigLBLeg3_05
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 33.784668, y: 0.0014228821, z: -0.0004787445}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sketchfab_model/7f0aee6ac6b74d0a87c684fa8a21b561_fbx/Object_2/RootNode/Elk_Animated/Object_5/_rootJoint/RigRoot_01/RigPelvis_02/RigLBLeg1_03/RigLBLeg2_04
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 2.2299042, y: 1.2818298, z: -11.996184}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sketchfab_model/7f0aee6ac6b74d0a87c684fa8a21b561_fbx/Object_2/RootNode/Elk_Animated/Object_5/_rootJoint/RigRoot_01/RigPelvis_02/RigLBLeg1_03
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 40.254784, y: -0.0007100105, z: -0.000027656555}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sketchfab_model/7f0aee6ac6b74d0a87c684fa8a21b561_fbx/Object_2/RootNode/Elk_Animated/Object_5/_rootJoint/RigRoot_01/RigPelvis_02/RigRBLeg1_07/RigRBLeg2_08/RigRBLeg3_09/RigRBLegAnkle_010
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 39.422333, y: -0.059600826, z: -0.009153366}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sketchfab_model/7f0aee6ac6b74d0a87c684fa8a21b561_fbx/Object_2/RootNode/Elk_Animated/Object_5/_rootJoint/RigRoot_01/RigPelvis_02/RigRBLeg1_07/RigRBLeg2_08/RigRBLeg3_09
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 33.784695, y: 0.0028381348, z: 0.0009641647}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sketchfab_model/7f0aee6ac6b74d0a87c684fa8a21b561_fbx/Object_2/RootNode/Elk_Animated/Object_5/_rootJoint/RigRoot_01/RigPelvis_02/RigRBLeg1_07/RigRBLeg2_08
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 2.2299345, y: 1.2817307, z: 11.996196}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sketchfab_model/7f0aee6ac6b74d0a87c684fa8a21b561_fbx/Object_2/RootNode/Elk_Animated/Object_5/_rootJoint/RigRoot_01/RigPelvis_02/RigRBLeg1_07
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 31.614119, y: 3.5527137e-15, z: -0.000002861023}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sketchfab_model/7f0aee6ac6b74d0a87c684fa8a21b561_fbx/Object_2/RootNode/Elk_Animated/Object_5/_rootJoint/RigRoot_01/RigPelvis_02/RigSpine1_011/RigSpine2_012/RigChest_013/RigLFLegCollarbone_014/RigLFLeg1_015/RigLFLeg2_016/RigLFLeg3_017/RigLFLegAnkle_018
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 37.12304, y: -0.00049591064, z: -0.0003466606}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sketchfab_model/7f0aee6ac6b74d0a87c684fa8a21b561_fbx/Object_2/RootNode/Elk_Animated/Object_5/_rootJoint/RigRoot_01/RigPelvis_02/RigSpine1_011/RigSpine2_012/RigChest_013/RigLFLegCollarbone_014/RigLFLeg1_015/RigLFLeg2_016/RigLFLeg3_017
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 28.815916, y: -0.0000038146973, z: -0.0000019073486}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sketchfab_model/7f0aee6ac6b74d0a87c684fa8a21b561_fbx/Object_2/RootNode/Elk_Animated/Object_5/_rootJoint/RigRoot_01/RigPelvis_02/RigSpine1_011/RigSpine2_012/RigChest_013/RigLFLegCollarbone_014/RigLFLeg1_015/RigLFLeg2_016
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 26.051924, y: 0, z: -0.0000019073486}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sketchfab_model/7f0aee6ac6b74d0a87c684fa8a21b561_fbx/Object_2/RootNode/Elk_Animated/Object_5/_rootJoint/RigRoot_01/RigPelvis_02/RigSpine1_011/RigSpine2_012/RigChest_013/RigLFLegCollarbone_014/RigLFLeg1_015
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 25.1734, y: -14.423492, z: -8.033749}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sketchfab_model/7f0aee6ac6b74d0a87c684fa8a21b561_fbx/Object_2/RootNode/Elk_Animated/Object_5/_rootJoint/RigRoot_01/RigPelvis_02/RigSpine1_011/RigSpine2_012/RigChest_013/RigLFLegCollarbone_014
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 9.866791, y: -0.000015258789, z: -0}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sketchfab_model/7f0aee6ac6b74d0a87c684fa8a21b561_fbx/Object_2/RootNode/Elk_Animated/Object_5/_rootJoint/RigRoot_01/RigPelvis_02/RigSpine1_011/RigSpine2_012/RigChest_013/RigNeck1_019/RigNeck2_020/RigNeck3_021/RigHead_00/RigJaw1_022/RigTongue1_023/RigTongue2_024
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 18.234894, y: 3.4988403, z: 0.00016784668}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sketchfab_model/7f0aee6ac6b74d0a87c684fa8a21b561_fbx/Object_2/RootNode/Elk_Animated/Object_5/_rootJoint/RigRoot_01/RigPelvis_02/RigSpine1_011/RigSpine2_012/RigChest_013/RigNeck1_019/RigNeck2_020/RigNeck3_021/RigHead_00/RigJaw1_022/RigTongue1_023
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 5.597534, y: 6.153824, z: -0}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sketchfab_model/7f0aee6ac6b74d0a87c684fa8a21b561_fbx/Object_2/RootNode/Elk_Animated/Object_5/_rootJoint/RigRoot_01/RigPelvis_02/RigSpine1_011/RigSpine2_012/RigChest_013/RigNeck1_019/RigNeck2_020/RigNeck3_021/RigHead_00/RigJaw1_022
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 10.334717, y: -2.9345703, z: -10.509322}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sketchfab_model/7f0aee6ac6b74d0a87c684fa8a21b561_fbx/Object_2/RootNode/Elk_Animated/Object_5/_rootJoint/RigRoot_01/RigPelvis_02/RigSpine1_011/RigSpine2_012/RigChest_013/RigNeck1_019/RigNeck2_020/RigNeck3_021/RigHead_00/RigLEar1_026
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 13.04605, y: 13.048416, z: -9.790871}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sketchfab_model/7f0aee6ac6b74d0a87c684fa8a21b561_fbx/Object_2/RootNode/Elk_Animated/Object_5/_rootJoint/RigRoot_01/RigPelvis_02/RigSpine1_011/RigSpine2_012/RigChest_013/RigNeck1_019/RigNeck2_020/RigNeck3_021/RigHead_00/RigLEyelid_027
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 10.334732, y: -2.9345703, z: 10.509338}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sketchfab_model/7f0aee6ac6b74d0a87c684fa8a21b561_fbx/Object_2/RootNode/Elk_Animated/Object_5/_rootJoint/RigRoot_01/RigPelvis_02/RigSpine1_011/RigSpine2_012/RigChest_013/RigNeck1_019/RigNeck2_020/RigNeck3_021/RigHead_00/RigREar1_028
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 13.04605, y: 13.048416, z: 9.790871}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sketchfab_model/7f0aee6ac6b74d0a87c684fa8a21b561_fbx/Object_2/RootNode/Elk_Animated/Object_5/_rootJoint/RigRoot_01/RigPelvis_02/RigSpine1_011/RigSpine2_012/RigChest_013/RigNeck1_019/RigNeck2_020/RigNeck3_021/RigHead_00/RigREyelid_029
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 21.396759, y: 0.000030517578, z: -0.0000038146973}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sketchfab_model/7f0aee6ac6b74d0a87c684fa8a21b561_fbx/Object_2/RootNode/Elk_Animated/Object_5/_rootJoint/RigRoot_01/RigPelvis_02/RigSpine1_011/RigSpine2_012/RigChest_013/RigNeck1_019/RigNeck2_020/RigNeck3_021/RigHead_00
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 19.128782, y: 0.000015258789, z: -1.4210855e-14}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sketchfab_model/7f0aee6ac6b74d0a87c684fa8a21b561_fbx/Object_2/RootNode/Elk_Animated/Object_5/_rootJoint/RigRoot_01/RigPelvis_02/RigSpine1_011/RigSpine2_012/RigChest_013/RigNeck1_019/RigNeck2_020/RigNeck3_021
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 21.269867, y: -2.842171e-14, z: -0.0000076293945}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sketchfab_model/7f0aee6ac6b74d0a87c684fa8a21b561_fbx/Object_2/RootNode/Elk_Animated/Object_5/_rootJoint/RigRoot_01/RigPelvis_02/RigSpine1_011/RigSpine2_012/RigChest_013/RigNeck1_019/RigNeck2_020
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 44.159283, y: 5.4631343, z: 7.1054274e-15}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sketchfab_model/7f0aee6ac6b74d0a87c684fa8a21b561_fbx/Object_2/RootNode/Elk_Animated/Object_5/_rootJoint/RigRoot_01/RigPelvis_02/RigSpine1_011/RigSpine2_012/RigChest_013/RigNeck1_019
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 31.614128, y: 0.000005722046, z: -0.0000019073486}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sketchfab_model/7f0aee6ac6b74d0a87c684fa8a21b561_fbx/Object_2/RootNode/Elk_Animated/Object_5/_rootJoint/RigRoot_01/RigPelvis_02/RigSpine1_011/RigSpine2_012/RigChest_013/RigRFLegCollarbone_030/RigRFLeg1_031/RigRFLeg2_032/RigRFLeg3_033/RigRFLegAnkle_034
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 37.12303, y: -0.00047302246, z: 0.00035095212}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sketchfab_model/7f0aee6ac6b74d0a87c684fa8a21b561_fbx/Object_2/RootNode/Elk_Animated/Object_5/_rootJoint/RigRoot_01/RigPelvis_02/RigSpine1_011/RigSpine2_012/RigChest_013/RigRFLegCollarbone_030/RigRFLeg1_031/RigRFLeg2_032/RigRFLeg3_033
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 28.8159, y: -0.00000071525574, z: -4.6629367e-15}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sketchfab_model/7f0aee6ac6b74d0a87c684fa8a21b561_fbx/Object_2/RootNode/Elk_Animated/Object_5/_rootJoint/RigRoot_01/RigPelvis_02/RigSpine1_011/RigSpine2_012/RigChest_013/RigRFLegCollarbone_030/RigRFLeg1_031/RigRFLeg2_032
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 26.051924, y: 0, z: 0.000022888184}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sketchfab_model/7f0aee6ac6b74d0a87c684fa8a21b561_fbx/Object_2/RootNode/Elk_Animated/Object_5/_rootJoint/RigRoot_01/RigPelvis_02/RigSpine1_011/RigSpine2_012/RigChest_013/RigRFLegCollarbone_030/RigRFLeg1_031
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 25.310274, y: -0.000015258789, z: -0.0001411438}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sketchfab_model/7f0aee6ac6b74d0a87c684fa8a21b561_fbx/Object_2/RootNode/Elk_Animated/Object_5/_rootJoint/RigRoot_01/RigPelvis_02/RigSpine1_011/RigSpine2_012/RigChest_013
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 25.065678, y: 0, z: -0.0000019073486}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sketchfab_model/7f0aee6ac6b74d0a87c684fa8a21b561_fbx/Object_2/RootNode/Elk_Animated/Object_5/_rootJoint/RigRoot_01/RigPelvis_02/RigSpine1_011/RigSpine2_012
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 6.007721, y: 17.161022, z: 0.00014686584}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sketchfab_model/7f0aee6ac6b74d0a87c684fa8a21b561_fbx/Object_2/RootNode/Elk_Animated/Object_5/_rootJoint/RigRoot_01/RigPelvis_02/RigSpine1_011
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 9.794685, y: 0.000015258789, z: 0.0000076293945}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sketchfab_model/7f0aee6ac6b74d0a87c684fa8a21b561_fbx/Object_2/RootNode/Elk_Animated/Object_5/_rootJoint/RigRoot_01/RigPelvis_02/RigTail1_035/RigTail2_036
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 10.171173, y: -18.963747, z: -0.00017356873}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sketchfab_model/7f0aee6ac6b74d0a87c684fa8a21b561_fbx/Object_2/RootNode/Elk_Animated/Object_5/_rootJoint/RigRoot_01/RigPelvis_02/RigTail1_035
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: -19.745377, y: 83.774185, z: -19.843979}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sketchfab_model/7f0aee6ac6b74d0a87c684fa8a21b561_fbx/Object_2/RootNode/Elk_Animated/Object_5/_rootJoint/RigRoot_01/RigPelvis_02
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 183.06497, y: 0, z: -26.077578}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sketchfab_model/7f0aee6ac6b74d0a87c684fa8a21b561_fbx/Object_2/RootNode/Elk_Animated/Object_5/_rootJoint/RigRoot_01
+  m_ScaleCurves:
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 1.0000011, y: 0.9999993, z: 1.0000001}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sketchfab_model/7f0aee6ac6b74d0a87c684fa8a21b561_fbx/Object_2/RootNode/Elk_Animated/Object_5/_rootJoint/RigRoot_01/RigPelvis_02/RigSpine1_011/RigSpine2_012/RigChest_013/RigRFLegCollarbone_030/RigRFLeg1_031/RigRFLeg2_032/RigRFLeg3_033/RigRFLegAnkle_034
+  m_FloatCurves: []
+  m_PPtrCurves: []
+  m_SampleRate: 60
+  m_WrapMode: 0
+  m_Bounds:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0, y: 0, z: 0}
+  m_ClipBindingConstant:
+    genericBindings: []
+    pptrCurveMapping: []
+  m_AnimationClipSettings:
+    serializedVersion: 2
+    m_AdditiveReferencePoseClip: {fileID: 0}
+    m_AdditiveReferencePoseTime: 0
+    m_StartTime: 0
+    m_StopTime: 0
+    m_OrientationOffsetY: 0
+    m_Level: 0
+    m_CycleOffset: 0
+    m_HasAdditiveReferencePose: 0
+    m_LoopTime: 1
+    m_LoopBlend: 0
+    m_LoopBlendOrientation: 0
+    m_LoopBlendPositionY: 0
+    m_LoopBlendPositionXZ: 0
+    m_KeepOriginalOrientation: 0
+    m_KeepOriginalPositionY: 1
+    m_KeepOriginalPositionXZ: 0
+    m_HeightFromFeet: 0
+    m_Mirror: 0
+  m_EditorCurves: []
+  m_EulerEditorCurves: []
+  m_HasGenericRootTransform: 0
+  m_HasMotionFloatCurves: 0
+  m_Events: []

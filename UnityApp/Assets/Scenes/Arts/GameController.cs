@@ -9,12 +9,10 @@ public class GameController : MonoBehaviour
     public TrackingManager trackingManager1;
     public TrackingManager trackingManager2;
     public TrackingManager trackingManager3;
-    public TrackingManager trackingManager4;
 
     public ImageState ImageState1;
     public ImageState ImageState2;
     public ImageState ImageState3;
-    public ImageState ImageState4;
 
     // Start is called before the first frame update
     void Start()
@@ -25,7 +23,8 @@ public class GameController : MonoBehaviour
             trans.name == "bird_orange" ||
             trans.name == "bird_orange1" ||
             trans.name == "low-poly_tractor" ||
-            trans.name == "snow_man")
+            trans.name == "elk_animated_stylized" ||
+            trans.name == "bee11")
             {
                 var animator = trans.GetComponent<Animator>();
                 if (animator) {
@@ -46,10 +45,6 @@ public class GameController : MonoBehaviour
         {
             ImageState3.onEnter();
         };
-        trackingManager4.onTracked = (trans) =>
-        {
-            ImageState4.onEnter();
-        };
 
         trackingManager1.onLost = (trans) =>
         {
@@ -62,10 +57,6 @@ public class GameController : MonoBehaviour
         trackingManager3.onLost = (trans) =>
         {
             ImageState3.onExit();
-        };
-        trackingManager4.onLost = (trans) =>
-        {
-            ImageState4.onExit();
         };
     }
 
